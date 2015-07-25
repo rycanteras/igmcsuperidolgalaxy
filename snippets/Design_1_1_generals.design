@@ -1,0 +1,1375 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="1" id="-1">
+                        <custom-7 comment="false" x="37" y="73">
+                            <ACTOR eid="var" id="0" vid="1"/>
+                            <int id="1" val="1"/>
+                        </custom-7>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <control eid="3" id="1"/>
+                    </keystate>
+                </if>
+                <else-if comment="false" x="26" y="112">
+                    <group eventID="1" id="-1">
+                        <custom-7 comment="false" x="37" y="145">
+                            <ACTOR eid="var" id="0" vid="1"/>
+                            <int id="1" val="-1"/>
+                        </custom-7>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <control eid="2" id="1"/>
+                    </keystate>
+                </else-if>
+                <else-if comment="false" x="26" y="184">
+                    <group eventID="1" id="-1">
+                        <if comment="false" x="37" y="217">
+                            <group eventID="1" id="-1">
+                                <set-map comment="false" x="48" y="255">
+                                    <get-attribute comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="var" id="0" vid="1"/>
+                                        <int id="1" val="triggers_hero"/>
+                                        <int id="2" val="_Parameters"/>
+                                    </get-attribute>
+                                    <int id="1" val="powerTemp"/>
+                                    <get-attribute comment="false" id="2" x="0" y="0">
+                                        <ACTOR eid="var" id="0" vid="1"/>
+                                        <int id="1" val="triggers_hero"/>
+                                        <int id="2" val="_PowerName"/>
+                                    </get-attribute>
+                                </set-map>
+                            </group>
+                            <noteq comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                    <int id="1" val="triggers_hero"/>
+                                    <int id="2" val="_PowerName"/>
+                                </get-attribute>
+                                <int id="1" val="recall"/>
+                            </noteq>
+                        </if>
+                        <set-attribute comment="false" x="37" y="300">
+                            <ACTOR eid="var" id="0" vid="1"/>
+                            <int id="1" val="triggers_hero"/>
+                            <int id="2" val="_PowerName"/>
+                            <int id="3" val="recall"/>
+                        </set-attribute>
+                        <if comment="false" x="37" y="327">
+                            <group eventID="1" id="-1">
+                                <custom-10 comment="false" x="48" y="365">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                </custom-10>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                    <int id="1" val="triggers_hero"/>
+                                    <int id="2" val="_Power"/>
+                                </get-attribute>
+                                <int id="1" val="0"/>
+                            </eq>
+                        </if>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <control eid="9" id="1"/>
+                    </keystate>
+                </else-if>
+                <else-if comment="false" x="26" y="416">
+                    <group eventID="1" id="-1">
+                        <if comment="false" x="37" y="449">
+                            <group eventID="1" id="-1">
+                                <custom-10 comment="false" x="48" y="487">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                </custom-10>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                    <int id="1" val="triggers_hero"/>
+                                    <int id="2" val="_Power"/>
+                                </get-attribute>
+                                <int id="1" val="0"/>
+                            </eq>
+                        </if>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <control eid="1" id="1"/>
+                    </keystate>
+                </else-if>
+                <else comment="false" x="26" y="538">
+                    <group eventID="1" id="-1">
+                        <if comment="false" x="37" y="558">
+                            <group eventID="1" id="-1">
+                                <custom-8 comment="false" x="48" y="596">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                </custom-8>
+                            </group>
+                            <noteq comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                    <int id="1" val="unit"/>
+                                    <int id="2" val="_ACTION"/>
+                                </get-attribute>
+                                <int id="1" val="rally"/>
+                            </noteq>
+                        </if>
+                    </group>
+                </else>
+                <if comment="false" x="26" y="647">
+                    <group eventID="1" id="-1">
+                        <custom-9 comment="false" x="37" y="680">
+                            <ACTOR eid="var" id="0" vid="1"/>
+                        </custom-9>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="1"/>
+                        <control eid="0" id="1"/>
+                    </keystate>
+                </if>
+                <if comment="false" x="26" y="719">
+                    <group eventID="1" id="-1">
+                        <set-attribute comment="false" x="37" y="752">
+                            <ACTOR eid="var" id="0" vid="1"/>
+                            <int id="1" val="triggers_hero"/>
+                            <int id="2" val="_PowerName"/>
+                            <int id="3" val="missle"/>
+                        </set-attribute>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="1"/>
+                        <control eid="7" id="1"/>
+                    </keystate>
+                </if>
+                <if comment="false" x="26" y="791">
+                    <group eventID="1" id="-1">
+                        <set-attribute comment="false" x="37" y="824">
+                            <ACTOR eid="var" id="0" vid="1"/>
+                            <int id="1" val="triggers_hero"/>
+                            <int id="2" val="_PowerName"/>
+                            <int id="3" val="swap"/>
+                        </set-attribute>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="1"/>
+                        <control eid="8" id="1"/>
+                    </keystate>
+                </if>
+                <setanim comment="false" x="26" y="863">
+                    <key-value comment="false" id="0" x="0" y="0">
+                        <get-val-1-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="SKILL"/>
+                    </key-value>
+                    <get-attribute comment="false" id="1" x="0" y="0">
+                        <ACTOR eid="var" id="0" vid="1"/>
+                        <int id="1" val="triggers_hero"/>
+                        <int id="2" val="_PowerName"/>
+                    </get-attribute>
+                </setanim>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <create-region comment="false" x="26" y="40">
+                    <int id="0" val="0"/>
+                    <int id="1" val="0"/>
+                    <scene-wh comment="false" id="2" x="0" y="0">
+                        <int id="0" val="0"/>
+                    </scene-wh>
+                    <scene-wh comment="false" id="3" x="0" y="0">
+                        <int id="0" val="1"/>
+                    </scene-wh>
+                </create-region>
+                <set-val-1-5 comment="false" x="26" y="73">
+                    <REGION eid="lastcreated" id="0"/>
+                </set-val-1-5>
+                <set-val-1-2 comment="false" x="26" y="100">
+                    <create-map comment="false" id="0" x="0" y="0"/>
+                </set-val-1-2>
+                <set-val-1-3 comment="false" x="26" y="125">
+                    <create-map comment="false" id="0" x="0" y="0"/>
+                </set-val-1-3>
+                <set-val-1-4 comment="false" x="26" y="150">
+                    <create-list comment="false" id="0" x="0" y="0"/>
+                </set-val-1-4>
+                <actors-of-type3 comment="false" x="26" y="175">
+                    <group eventID="2" id="-1">
+                        <set-val-1-1 comment="false" x="37" y="207">
+                            <actor-of-type comment="false" id="0" x="0" y="0"/>
+                        </set-val-1-1>
+                        <ignore-screen-tolerance comment="false" x="37" y="239">
+                            <actor-of-type comment="false" id="0" x="0" y="0"/>
+                        </ignore-screen-tolerance>
+                    </group>
+                    <actortype eid="0" id="0"/>
+                </actors-of-type3>
+                <create-actor3 comment="false" x="26" y="283">
+                    <actortype eid="19" id="0"/>
+                    <int id="1" val="10"/>
+                    <int id="2" val="10"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <anchor-screen comment="false" x="26" y="310">
+                    <ACTOR eid="lastcreated" id="0"/>
+                </anchor-screen>
+                <set-map comment="false" x="26" y="337">
+                    <get-val-1-2 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="SKILL"/>
+                    <actor comment="false" id="2" x="0" y="0">
+                        <ACTOR eid="lastcreated" id="0"/>
+                    </actor>
+                </set-map>
+                <create-actor3 comment="false" x="26" y="370">
+                    <actortype eid="22" id="0"/>
+                    <int id="1" val="10"/>
+                    <int id="2" val="10"/>
+                    <int id="3" val="0"/>
+                </create-actor3>
+                <set-xy comment="false" x="26" y="397">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="1"/>
+                    <get-xy comment="false" id="2" x="0" y="0">
+                        <ACTOR eid="var" id="0" vid="1"/>
+                        <int id="1" val="3"/>
+                    </get-xy>
+                </set-xy>
+                <set-xy comment="false" x="26" y="437">
+                    <ACTOR eid="lastcreated" id="0"/>
+                    <int id="1" val="0"/>
+                    <get-xy comment="false" id="2" x="0" y="0">
+                        <ACTOR eid="var" id="0" vid="1"/>
+                        <int id="1" val="2"/>
+                    </get-xy>
+                </set-xy>
+                <anchor-screen comment="false" x="26" y="477">
+                    <ACTOR eid="lastcreated" id="0"/>
+                </anchor-screen>
+                <set-map comment="false" x="26" y="504">
+                    <get-val-1-2 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="CAMERA"/>
+                    <actor comment="false" id="2" x="0" y="0">
+                        <ACTOR eid="lastcreated" id="0"/>
+                    </actor>
+                </set-map>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="4" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <set-alpha comment="false" x="26" y="40">
+                    <int id="0" val="100"/>
+                </set-alpha>
+                <set-color comment="false" x="26" y="60">
+                    <color b="51" g="51" id="0" r="51"/>
+                </set-color>
+                <set-thickness comment="false" x="26" y="87">
+                    <int id="0" val="0"/>
+                </set-thickness>
+                <drawfill-rect comment="false" x="26" y="107">
+                    <int id="0" val="1"/>
+                    <int id="1" val="50"/>
+                    <int id="2" val="30"/>
+                    <int id="3" val="100"/>
+                    <int id="4" val="20"/>
+                </drawfill-rect>
+                <if comment="false" x="26" y="134">
+                    <group eventID="4" id="-1">
+                        <set-color comment="false" x="37" y="172">
+                            <color b="0" g="153" id="0" r="255"/>
+                        </set-color>
+                        <drawfill-rect comment="false" x="37" y="199">
+                            <int id="0" val="1"/>
+                            <int id="1" val="50"/>
+                            <int id="2" val="30"/>
+                            <times comment="false" id="3" x="0" y="0">
+                                <div comment="false" id="0" x="0" y="0">
+                                    <key-value comment="false" id="0" x="0" y="0">
+                                        <get-attribute comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="var" id="0" vid="1"/>
+                                            <int id="1" val="unit"/>
+                                            <int id="2" val="_Meters"/>
+                                        </get-attribute>
+                                        <int id="1" val="charge"/>
+                                    </key-value>
+                                    <key-value comment="false" id="1" x="0" y="0">
+                                        <get-attribute comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="var" id="0" vid="1"/>
+                                            <int id="1" val="unit"/>
+                                            <int id="2" val="_Parameters"/>
+                                        </get-attribute>
+                                        <int id="1" val="chargeMax"/>
+                                    </key-value>
+                                </div>
+                                <int id="1" val="100"/>
+                            </times>
+                            <int id="4" val="20"/>
+                        </drawfill-rect>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-attribute comment="false" id="0" x="0" y="0">
+                            <ACTOR eid="var" id="0" vid="1"/>
+                            <int id="1" val="triggers_hero"/>
+                            <int id="2" val="_Power"/>
+                        </get-attribute>
+                        <int id="1" val="0"/>
+                    </eq>
+                </if>
+                <else comment="false" x="26" y="266">
+                    <group eventID="4" id="-1">
+                        <if comment="false" x="37" y="286">
+                            <group eventID="4" id="-1">
+                                <set-color comment="false" x="48" y="324">
+                                    <color b="51" g="0" id="0" r="255"/>
+                                </set-color>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                    <int id="1" val="triggers_hero"/>
+                                    <int id="2" val="_PowerName"/>
+                                </get-attribute>
+                                <int id="1" val="missle"/>
+                            </eq>
+                        </if>
+                        <else-if comment="false" x="37" y="363">
+                            <group eventID="4" id="-1">
+                                <set-color comment="false" x="48" y="401">
+                                    <color b="204" g="0" id="0" r="255"/>
+                                </set-color>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                    <int id="1" val="triggers_hero"/>
+                                    <int id="2" val="_PowerName"/>
+                                </get-attribute>
+                                <int id="1" val="swap"/>
+                            </eq>
+                        </else-if>
+                        <else-if comment="false" x="37" y="440">
+                            <group eventID="4" id="-1">
+                                <set-color comment="false" x="48" y="478">
+                                    <color b="153" g="153" id="0" r="0"/>
+                                </set-color>
+                            </group>
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                    <int id="1" val="triggers_hero"/>
+                                    <int id="2" val="_PowerName"/>
+                                </get-attribute>
+                                <int id="1" val="recall"/>
+                            </eq>
+                        </else-if>
+                        <drawfill-rect comment="false" x="37" y="517">
+                            <int id="0" val="1"/>
+                            <int id="1" val="50"/>
+                            <int id="2" val="30"/>
+                            <times comment="false" id="3" x="0" y="0">
+                                <div comment="false" id="0" x="0" y="0">
+                                    <get-attribute comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="var" id="0" vid="1"/>
+                                        <int id="1" val="triggers_hero"/>
+                                        <int id="2" val="_Power"/>
+                                    </get-attribute>
+                                    <key-value comment="false" id="1" x="0" y="0">
+                                        <get-attribute comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="var" id="0" vid="1"/>
+                                            <int id="1" val="unit"/>
+                                            <int id="2" val="_Parameters"/>
+                                        </get-attribute>
+                                        <int id="1" val="chargeMax"/>
+                                    </key-value>
+                                </div>
+                                <int id="1" val="100"/>
+                            </times>
+                            <int id="4" val="20"/>
+                        </drawfill-rect>
+                    </group>
+                </else>
+            </group>
+        </draw>
+    </group>
+    <group eventID="4" id="-1"/>
+    <group eventID="5" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="5" id="-1">
+                        <for-each comment="false" x="37" y="83">
+                            <group eventID="5" id="-1">
+                                <if comment="false" x="48" y="116">
+                                    <group eventID="5" id="-1">
+                                        <if comment="false" x="59" y="149">
+                                            <group eventID="5" id="-1">
+                                                <break comment="false" x="70" y="200"/>
+                                            </group>
+                                            <custom-34 comment="false" id="0" x="0" y="0">
+                                                <ACTOR eid="var" id="0" vid="1"/>
+                                                <for-each-item comment="false" id="1" x="0" y="0"/>
+                                                <plus comment="false" id="2" x="0" y="0">
+                                                    <screen-xy comment="false" id="0" x="0" y="0">
+                                                        <int id="0" val="0"/>
+                                                    </screen-xy>
+                                                    <mousexy comment="false" id="1" x="0" y="0">
+                                                        <int id="0" val="0"/>
+                                                        <int id="1" val="0"/>
+                                                    </mousexy>
+                                                </plus>
+                                                <plus comment="false" id="3" x="0" y="0">
+                                                    <screen-xy comment="false" id="0" x="0" y="0">
+                                                        <int id="0" val="1"/>
+                                                    </screen-xy>
+                                                    <mousexy comment="false" id="1" x="0" y="0">
+                                                        <int id="0" val="0"/>
+                                                        <int id="1" val="1"/>
+                                                    </mousexy>
+                                                </plus>
+                                            </custom-34>
+                                        </if>
+                                    </group>
+                                    <mousestate comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                    </mousestate>
+                                </if>
+                            </group>
+                            <get-attribute comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="1"/>
+                                <int id="1" val="triggers_hero"/>
+                                <int id="2" val="_FANS"/>
+                            </get-attribute>
+                        </for-each>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <noteq comment="false" id="0" x="0" y="0">
+                            <get-attribute comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="1"/>
+                                <int id="1" val="unit"/>
+                                <int id="2" val="_ACTION"/>
+                            </get-attribute>
+                            <int id="1" val="rally"/>
+                        </noteq>
+                        <noteq comment="false" id="1" x="0" y="0">
+                            <get-attribute comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="1"/>
+                                <int id="1" val="unit"/>
+                                <int id="2" val="_ACTION"/>
+                            </get-attribute>
+                            <int id="1" val="flick"/>
+                        </noteq>
+                    </and>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="5" id="2">
+        <if comment="false" x="100" y="538">
+            <group eventID="5" id="-1">
+                <if comment="false" x="111" y="576">
+                    <group eventID="5" id="-1">
+                        <break comment="false" x="122" y="614"/>
+                    </group>
+                    <custom-32 comment="false" id="0" x="0" y="0">
+                        <ACTOR eid="var" id="0" vid="1"/>
+                        <for-each-item comment="false" id="1" x="0" y="0"/>
+                    </custom-32>
+                </if>
+            </group>
+            <amousestate comment="false" id="0" x="0" y="0">
+                <for-each-item comment="false" id="0" x="0" y="0"/>
+                <int id="1" val="1"/>
+            </amousestate>
+        </if>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="7" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="7" id="-1">
+                <camera-follow comment="false" x="26" y="40">
+                    <key-value comment="false" id="0" x="0" y="0">
+                        <get-val-1-2 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="CAMERA"/>
+                    </key-value>
+                </camera-follow>
+                <set-map comment="false" x="26" y="77">
+                    <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="distance"/>
+                    <sqrt comment="false" id="2" x="0" y="0">
+                        <plus comment="false" id="0" x="0" y="0">
+                            <pow comment="false" id="0" x="0" y="0">
+                                <minus comment="false" id="0" x="0" y="0">
+                                    <get-xy comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="var" id="0" vid="1"/>
+                                        <int id="1" val="2"/>
+                                    </get-xy>
+                                    <get-xy comment="false" id="1" x="0" y="0">
+                                        <key-value comment="false" id="0" x="0" y="0">
+                                            <get-val-1-2 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="CAMERA"/>
+                                        </key-value>
+                                        <int id="1" val="2"/>
+                                    </get-xy>
+                                </minus>
+                                <int id="1" val="2"/>
+                            </pow>
+                            <pow comment="false" id="1" x="0" y="0">
+                                <minus comment="false" id="0" x="0" y="0">
+                                    <get-xy comment="false" id="0" x="0" y="0">
+                                        <ACTOR eid="var" id="0" vid="1"/>
+                                        <int id="1" val="3"/>
+                                    </get-xy>
+                                    <get-xy comment="false" id="1" x="0" y="0">
+                                        <key-value comment="false" id="0" x="0" y="0">
+                                            <get-val-1-2 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="CAMERA"/>
+                                        </key-value>
+                                        <int id="1" val="3"/>
+                                    </get-xy>
+                                </minus>
+                                <int id="1" val="2"/>
+                            </pow>
+                        </plus>
+                    </sqrt>
+                </set-map>
+                <set-map comment="false" x="26" y="140">
+                    <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="angle"/>
+                    <atan2 comment="false" id="2" x="0" y="0">
+                        <minus comment="false" id="0" x="0" y="0">
+                            <get-xy comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="1"/>
+                                <int id="1" val="3"/>
+                            </get-xy>
+                            <get-xy comment="false" id="1" x="0" y="0">
+                                <key-value comment="false" id="0" x="0" y="0">
+                                    <get-val-1-2 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="CAMERA"/>
+                                </key-value>
+                                <int id="1" val="3"/>
+                            </get-xy>
+                        </minus>
+                        <minus comment="false" id="1" x="0" y="0">
+                            <get-xy comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="1"/>
+                                <int id="1" val="2"/>
+                            </get-xy>
+                            <get-xy comment="false" id="1" x="0" y="0">
+                                <key-value comment="false" id="0" x="0" y="0">
+                                    <get-val-1-2 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="CAMERA"/>
+                                </key-value>
+                                <int id="1" val="2"/>
+                            </get-xy>
+                        </minus>
+                    </atan2>
+                </set-map>
+                <if comment="false" x="26" y="193">
+                    <group eventID="7" id="-1">
+                        <set-xy comment="false" x="37" y="228">
+                            <key-value comment="false" id="0" x="0" y="0">
+                                <get-val-1-2 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="CAMERA"/>
+                            </key-value>
+                            <int id="1" val="0"/>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <key-value comment="false" id="0" x="0" y="0">
+                                        <get-val-1-2 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="CAMERA"/>
+                                    </key-value>
+                                    <int id="1" val="0"/>
+                                </get-xy>
+                                <times comment="false" id="1" x="0" y="0">
+                                    <times comment="false" id="0" x="0" y="0">
+                                        <key-value comment="false" id="0" x="0" y="0">
+                                            <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="distance"/>
+                                        </key-value>
+                                        <int id="1" val="0.02"/>
+                                    </times>
+                                    <trig-master comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="1"/>
+                                        <key-value comment="false" id="1" x="0" y="0">
+                                            <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="angle"/>
+                                        </key-value>
+                                        <int id="2" val="1"/>
+                                    </trig-master>
+                                </times>
+                            </plus>
+                        </set-xy>
+                        <set-xy comment="false" x="37" y="288">
+                            <key-value comment="false" id="0" x="0" y="0">
+                                <get-val-1-2 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="CAMERA"/>
+                            </key-value>
+                            <int id="1" val="1"/>
+                            <plus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <key-value comment="false" id="0" x="0" y="0">
+                                        <get-val-1-2 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="CAMERA"/>
+                                    </key-value>
+                                    <int id="1" val="1"/>
+                                </get-xy>
+                                <times comment="false" id="1" x="0" y="0">
+                                    <times comment="false" id="0" x="0" y="0">
+                                        <key-value comment="false" id="0" x="0" y="0">
+                                            <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="distance"/>
+                                        </key-value>
+                                        <int id="1" val="0.02"/>
+                                    </times>
+                                    <trig-master comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <key-value comment="false" id="1" x="0" y="0">
+                                            <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="angle"/>
+                                        </key-value>
+                                        <int id="2" val="1"/>
+                                    </trig-master>
+                                </times>
+                            </plus>
+                        </set-xy>
+                    </group>
+                    <more comment="false" id="0" x="0" y="0">
+                        <key-value comment="false" id="0" x="0" y="0">
+                            <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="distance"/>
+                        </key-value>
+                        <int id="1" val="40"/>
+                    </more>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="7" id="-1"/>
+    <group eventID="8" id="0">
+        <draw comment="false" x="15" y="15">
+            <group eventID="8" id="-1">
+                <for-each comment="false" x="26" y="40">
+                    <group eventID="8" id="-1">
+                        <if comment="false" x="37" y="65">
+                            <group eventID="8" id="-1">
+                                <set-map comment="false" x="48" y="100">
+                                    <for-each-item comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="lifespan"/>
+                                    <minus comment="false" id="2" x="0" y="0">
+                                        <key-value comment="false" id="0" x="0" y="0">
+                                            <for-each-item comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="lifespan"/>
+                                        </key-value>
+                                        <int id="1" val="1"/>
+                                    </minus>
+                                </set-map>
+                                <if comment="false" x="48" y="135">
+                                    <group eventID="8" id="-1">
+                                        <set-alpha comment="false" x="59" y="170">
+                                            <times comment="false" id="0" x="0" y="0">
+                                                <div comment="false" id="0" x="0" y="0">
+                                                    <key-value comment="false" id="0" x="0" y="0">
+                                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="lifespan"/>
+                                                    </key-value>
+                                                    <key-value comment="false" id="1" x="0" y="0">
+                                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="lifebase"/>
+                                                    </key-value>
+                                                </div>
+                                                <int id="1" val="100"/>
+                                            </times>
+                                        </set-alpha>
+                                        <set-stroke-color comment="false" x="59" y="210">
+                                            <key-value comment="false" id="0" x="0" y="0">
+                                                <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="color"/>
+                                            </key-value>
+                                        </set-stroke-color>
+                                        <set-thickness comment="false" x="59" y="247">
+                                            <key-value comment="false" id="0" x="0" y="0">
+                                                <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="thickness"/>
+                                            </key-value>
+                                        </set-thickness>
+                                        <draw-line comment="false" x="59" y="277">
+                                            <minus comment="false" id="0" x="0" y="0">
+                                                <key-value comment="false" id="0" x="0" y="0">
+                                                    <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="x1"/>
+                                                </key-value>
+                                                <screen-xy comment="false" id="1" x="0" y="0">
+                                                    <int id="0" val="0"/>
+                                                </screen-xy>
+                                            </minus>
+                                            <minus comment="false" id="1" x="0" y="0">
+                                                <key-value comment="false" id="0" x="0" y="0">
+                                                    <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="y1"/>
+                                                </key-value>
+                                                <screen-xy comment="false" id="1" x="0" y="0">
+                                                    <int id="0" val="1"/>
+                                                </screen-xy>
+                                            </minus>
+                                            <minus comment="false" id="2" x="0" y="0">
+                                                <key-value comment="false" id="0" x="0" y="0">
+                                                    <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="x2"/>
+                                                </key-value>
+                                                <screen-xy comment="false" id="1" x="0" y="0">
+                                                    <int id="0" val="0"/>
+                                                </screen-xy>
+                                            </minus>
+                                            <minus comment="false" id="3" x="0" y="0">
+                                                <key-value comment="false" id="0" x="0" y="0">
+                                                    <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="y2"/>
+                                                </key-value>
+                                                <screen-xy comment="false" id="1" x="0" y="0">
+                                                    <int id="0" val="1"/>
+                                                </screen-xy>
+                                            </minus>
+                                        </draw-line>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <key-value comment="false" id="0" x="0" y="0">
+                                            <for-each-item comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="type"/>
+                                        </key-value>
+                                        <int id="1" val="line"/>
+                                    </eq>
+                                </if>
+                                <if comment="false" x="48" y="327">
+                                    <group eventID="8" id="-1">
+                                        <set-alpha comment="false" x="59" y="362">
+                                            <times comment="false" id="0" x="0" y="0">
+                                                <div comment="false" id="0" x="0" y="0">
+                                                    <key-value comment="false" id="0" x="0" y="0">
+                                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="lifespan"/>
+                                                    </key-value>
+                                                    <key-value comment="false" id="1" x="0" y="0">
+                                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="lifebase"/>
+                                                    </key-value>
+                                                </div>
+                                                <int id="1" val="100"/>
+                                            </times>
+                                        </set-alpha>
+                                        <set-stroke-color comment="false" x="59" y="402">
+                                            <key-value comment="false" id="0" x="0" y="0">
+                                                <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="color"/>
+                                            </key-value>
+                                        </set-stroke-color>
+                                        <set-thickness comment="false" x="59" y="439">
+                                            <key-value comment="false" id="0" x="0" y="0">
+                                                <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="thickness"/>
+                                            </key-value>
+                                        </set-thickness>
+                                        <drawfill-circle comment="false" x="59" y="469">
+                                            <int id="0" val="0"/>
+                                            <minus comment="false" id="1" x="0" y="0">
+                                                <key-value comment="false" id="0" x="0" y="0">
+                                                    <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="x"/>
+                                                </key-value>
+                                                <screen-xy comment="false" id="1" x="0" y="0">
+                                                    <int id="0" val="0"/>
+                                                </screen-xy>
+                                            </minus>
+                                            <minus comment="false" id="2" x="0" y="0">
+                                                <key-value comment="false" id="0" x="0" y="0">
+                                                    <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="y"/>
+                                                </key-value>
+                                                <screen-xy comment="false" id="1" x="0" y="0">
+                                                    <int id="0" val="1"/>
+                                                </screen-xy>
+                                            </minus>
+                                            <key-value comment="false" id="3" x="0" y="0">
+                                                <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="radius"/>
+                                            </key-value>
+                                        </drawfill-circle>
+                                        <set-map comment="false" x="59" y="514">
+                                            <for-each-item comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="radius"/>
+                                            <plus comment="false" id="2" x="0" y="0">
+                                                <key-value comment="false" id="0" x="0" y="0">
+                                                    <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="radius"/>
+                                                </key-value>
+                                                <key-value comment="false" id="1" x="0" y="0">
+                                                    <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="growth"/>
+                                                </key-value>
+                                            </plus>
+                                        </set-map>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <key-value comment="false" id="0" x="0" y="0">
+                                            <for-each-item comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="type"/>
+                                        </key-value>
+                                        <int id="1" val="circle"/>
+                                    </eq>
+                                </if>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <key-value comment="false" id="0" x="0" y="0">
+                                    <for-each-item comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="lifespan"/>
+                                </key-value>
+                                <int id="1" val="0"/>
+                            </more>
+                        </if>
+                        <else comment="false" x="37" y="573">
+                            <group eventID="8" id="-1">
+                                <remove-item comment="false" x="48" y="593">
+                                    <get-val-1-4 comment="false" id="0" x="0" y="0"/>
+                                    <for-each-item comment="false" id="1" x="0" y="0"/>
+                                </remove-item>
+                            </group>
+                        </else>
+                    </group>
+                    <get-val-1-4 comment="false" id="0" x="0" y="0"/>
+                </for-each>
+            </group>
+        </draw>
+    </group>
+    <group eventID="8" id="-1"/>
+    <group eventID="9" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="9" id="-1">
+                <empty-map comment="false" x="26" y="40">
+                    <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                </empty-map>
+            </group>
+        </step>
+    </group>
+    <group eventID="9" id="-1"/>
+    <group eventID="10" id="0">
+        <receiver-2-24 comment="false" x="15" y="15">
+            <group eventID="10" id="-1">
+                <set-map comment="false" x="26" y="45">
+                    <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="DRAW"/>
+                    <create-map comment="false" id="2" x="0" y="0"/>
+                </set-map>
+                <set-map comment="false" x="26" y="70">
+                    <key-value comment="false" id="0" x="0" y="0">
+                        <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="DRAW"/>
+                    </key-value>
+                    <int id="1" val="x1"/>
+                    <get-byobval-1-24-0 comment="false" id="2" x="0" y="0"/>
+                </set-map>
+                <set-map comment="false" x="26" y="100">
+                    <key-value comment="false" id="0" x="0" y="0">
+                        <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="DRAW"/>
+                    </key-value>
+                    <int id="1" val="y1"/>
+                    <get-byobval-1-24-1 comment="false" id="2" x="0" y="0"/>
+                </set-map>
+                <set-map comment="false" x="26" y="130">
+                    <key-value comment="false" id="0" x="0" y="0">
+                        <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="DRAW"/>
+                    </key-value>
+                    <int id="1" val="x2"/>
+                    <get-byobval-1-24-2 comment="false" id="2" x="0" y="0"/>
+                </set-map>
+                <set-map comment="false" x="26" y="160">
+                    <key-value comment="false" id="0" x="0" y="0">
+                        <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="DRAW"/>
+                    </key-value>
+                    <int id="1" val="y2"/>
+                    <get-byobval-1-24-3 comment="false" id="2" x="0" y="0"/>
+                </set-map>
+                <set-map comment="false" x="26" y="190">
+                    <key-value comment="false" id="0" x="0" y="0">
+                        <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="DRAW"/>
+                    </key-value>
+                    <int id="1" val="color"/>
+                    <get-byobval-1-24-4 comment="false" id="2" x="0" y="0"/>
+                </set-map>
+                <set-map comment="false" x="26" y="220">
+                    <key-value comment="false" id="0" x="0" y="0">
+                        <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="DRAW"/>
+                    </key-value>
+                    <int id="1" val="lifebase"/>
+                    <get-byobval-1-24-6 comment="false" id="2" x="0" y="0"/>
+                </set-map>
+                <set-map comment="false" x="26" y="250">
+                    <key-value comment="false" id="0" x="0" y="0">
+                        <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="DRAW"/>
+                    </key-value>
+                    <int id="1" val="lifespan"/>
+                    <get-byobval-1-24-6 comment="false" id="2" x="0" y="0"/>
+                </set-map>
+                <set-map comment="false" x="26" y="280">
+                    <key-value comment="false" id="0" x="0" y="0">
+                        <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="DRAW"/>
+                    </key-value>
+                    <int id="1" val="thickness"/>
+                    <get-byobval-1-24-5 comment="false" id="2" x="0" y="0"/>
+                </set-map>
+                <set-map comment="false" x="26" y="310">
+                    <key-value comment="false" id="0" x="0" y="0">
+                        <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="DRAW"/>
+                    </key-value>
+                    <int id="1" val="type"/>
+                    <int id="2" val="line"/>
+                </set-map>
+                <add-list comment="false" x="26" y="340">
+                    <get-val-1-4 comment="false" id="0" x="0" y="0"/>
+                    <key-value comment="false" id="1" x="0" y="0">
+                        <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="DRAW"/>
+                    </key-value>
+                </add-list>
+            </group>
+            <get-byobval-1-24-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-1-24-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-1-24-2 comment="false" id="2" x="0" y="0"/>
+            <get-byobval-1-24-3 comment="false" id="3" x="0" y="0"/>
+            <get-byobval-1-24-4 comment="false" id="4" x="0" y="0"/>
+            <get-byobval-1-24-5 comment="false" id="5" x="0" y="0"/>
+            <get-byobval-1-24-6 comment="false" id="6" x="0" y="0"/>
+        </receiver-2-24>
+    </group>
+    <group eventID="10" id="-1"/>
+    <group eventID="11" id="0">
+        <receiver-3-25 comment="false" x="15" y="15">
+            <group eventID="11" id="-1">
+                <set-map comment="false" x="26" y="45">
+                    <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="DRAW"/>
+                    <create-map comment="false" id="2" x="0" y="0"/>
+                </set-map>
+                <set-map comment="false" x="26" y="70">
+                    <key-value comment="false" id="0" x="0" y="0">
+                        <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="DRAW"/>
+                    </key-value>
+                    <int id="1" val="x"/>
+                    <get-byobval-1-25-0 comment="false" id="2" x="0" y="0"/>
+                </set-map>
+                <set-map comment="false" x="26" y="100">
+                    <key-value comment="false" id="0" x="0" y="0">
+                        <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="DRAW"/>
+                    </key-value>
+                    <int id="1" val="y"/>
+                    <get-byobval-1-25-1 comment="false" id="2" x="0" y="0"/>
+                </set-map>
+                <set-map comment="false" x="26" y="130">
+                    <key-value comment="false" id="0" x="0" y="0">
+                        <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="DRAW"/>
+                    </key-value>
+                    <int id="1" val="radius"/>
+                    <get-byobval-1-25-4 comment="false" id="2" x="0" y="0"/>
+                </set-map>
+                <set-map comment="false" x="26" y="160">
+                    <key-value comment="false" id="0" x="0" y="0">
+                        <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="DRAW"/>
+                    </key-value>
+                    <int id="1" val="growth"/>
+                    <get-byobval-1-25-5 comment="false" id="2" x="0" y="0"/>
+                </set-map>
+                <set-map comment="false" x="26" y="190">
+                    <key-value comment="false" id="0" x="0" y="0">
+                        <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="DRAW"/>
+                    </key-value>
+                    <int id="1" val="color"/>
+                    <get-byobval-1-25-2 comment="false" id="2" x="0" y="0"/>
+                </set-map>
+                <set-map comment="false" x="26" y="220">
+                    <key-value comment="false" id="0" x="0" y="0">
+                        <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="DRAW"/>
+                    </key-value>
+                    <int id="1" val="lifebase"/>
+                    <get-byobval-1-25-6 comment="false" id="2" x="0" y="0"/>
+                </set-map>
+                <set-map comment="false" x="26" y="250">
+                    <key-value comment="false" id="0" x="0" y="0">
+                        <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="DRAW"/>
+                    </key-value>
+                    <int id="1" val="lifespan"/>
+                    <get-byobval-1-25-6 comment="false" id="2" x="0" y="0"/>
+                </set-map>
+                <set-map comment="false" x="26" y="280">
+                    <key-value comment="false" id="0" x="0" y="0">
+                        <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="DRAW"/>
+                    </key-value>
+                    <int id="1" val="thickness"/>
+                    <get-byobval-1-25-3 comment="false" id="2" x="0" y="0"/>
+                </set-map>
+                <set-map comment="false" x="26" y="310">
+                    <key-value comment="false" id="0" x="0" y="0">
+                        <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="DRAW"/>
+                    </key-value>
+                    <int id="1" val="type"/>
+                    <int id="2" val="circle"/>
+                </set-map>
+                <add-list comment="false" x="26" y="340">
+                    <get-val-1-4 comment="false" id="0" x="0" y="0"/>
+                    <key-value comment="false" id="1" x="0" y="0">
+                        <get-val-1-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="DRAW"/>
+                    </key-value>
+                </add-list>
+            </group>
+            <get-byobval-1-25-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-1-25-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-1-25-2 comment="false" id="2" x="0" y="0"/>
+            <get-byobval-1-25-3 comment="false" id="3" x="0" y="0"/>
+            <get-byobval-1-25-4 comment="false" id="4" x="0" y="0"/>
+            <get-byobval-1-25-5 comment="false" id="5" x="0" y="0"/>
+            <get-byobval-1-25-6 comment="false" id="6" x="0" y="0"/>
+        </receiver-3-25>
+    </group>
+    <group eventID="11" id="-1"/>
+    <group eventID="12" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="12" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="12" id="-1">
+                        <create-actor3 comment="false" x="37" y="73">
+                            <actortype eid="12" id="0"/>
+                            <minus comment="false" id="1" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                    <int id="1" val="2"/>
+                                </get-xy>
+                                <int id="1" val="20"/>
+                            </minus>
+                            <minus comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <ACTOR eid="var" id="0" vid="1"/>
+                                    <int id="1" val="3"/>
+                                </get-xy>
+                                <int id="1" val="20"/>
+                            </minus>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <ignore-screen-tolerance comment="false" x="37" y="118">
+                            <ACTOR eid="lastcreated" id="0"/>
+                        </ignore-screen-tolerance>
+                        <custom-8 comment="false" x="37" y="145">
+                            <ACTOR eid="lastcreated" id="0"/>
+                        </custom-8>
+                        <add-list comment="false" x="37" y="172">
+                            <get-attribute comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="1"/>
+                                <int id="1" val="triggers_hero"/>
+                                <int id="2" val="_FANS"/>
+                            </get-attribute>
+                            <actor comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="lastcreated" id="0"/>
+                            </actor>
+                        </add-list>
+                        <set-attribute comment="false" x="37" y="205">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="triggers_fans"/>
+                            <int id="2" val="_followDistance"/>
+                            <int id="3" val="60"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="232">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="triggers_fans"/>
+                            <int id="2" val="_IDOL"/>
+                            <actor comment="false" id="3" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="1"/>
+                            </actor>
+                        </set-attribute>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="1"/>
+                        <control eid="5" id="1"/>
+                    </keystate>
+                </if>
+                <else-if comment="false" x="26" y="284">
+                    <group eventID="12" id="-1">
+                        <for-each comment="false" x="37" y="317">
+                            <group eventID="12" id="-1">
+                                <if comment="false" x="48" y="350">
+                                    <group eventID="12" id="-1">
+                                        <if comment="false" x="59" y="393">
+                                            <group eventID="12" id="-1">
+                                                <remove-item comment="false" x="70" y="441">
+                                                    <get-attribute comment="false" id="0" x="0" y="0">
+                                                        <ACTOR eid="var" id="0" vid="1"/>
+                                                        <int id="1" val="triggers_hero"/>
+                                                        <int id="2" val="_FANS"/>
+                                                    </get-attribute>
+                                                    <for-each-item comment="false" id="1" x="0" y="0"/>
+                                                </remove-item>
+                                                <die comment="false" x="70" y="474">
+                                                    <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                </die>
+                                                <break comment="false" x="70" y="506"/>
+                                            </group>
+                                            <or comment="false" id="0" x="0" y="0">
+                                                <eq comment="false" id="0" x="0" y="0">
+                                                    <get-attribute comment="false" id="0" x="0" y="0">
+                                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="triggers_fans"/>
+                                                        <int id="2" val="_state"/>
+                                                    </get-attribute>
+                                                    <int id="1" val="follow"/>
+                                                </eq>
+                                                <eq comment="false" id="1" x="0" y="0">
+                                                    <get-attribute comment="false" id="0" x="0" y="0">
+                                                        <for-each-item comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="triggers_fans"/>
+                                                        <int id="2" val="_state"/>
+                                                    </get-attribute>
+                                                    <int id="1" val="idle"/>
+                                                </eq>
+                                            </or>
+                                        </if>
+                                    </group>
+                                    <not comment="false" id="0" x="0" y="0">
+                                        <get-attribute comment="false" id="0" x="0" y="0">
+                                            <for-each-item comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="triggers_fans"/>
+                                            <int id="2" val="_STAR"/>
+                                        </get-attribute>
+                                    </not>
+                                </if>
+                            </group>
+                            <get-attribute comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="1"/>
+                                <int id="1" val="triggers_hero"/>
+                                <int id="2" val="_FANS"/>
+                            </get-attribute>
+                        </for-each>
+                    </group>
+                    <keystate comment="false" id="0" x="0" y="0">
+                        <int id="0" val="1"/>
+                        <control eid="6" id="1"/>
+                    </keystate>
+                </else-if>
+            </group>
+        </step>
+    </group>
+    <group eventID="12" id="-1"/>
+    <group eventID="13" id="0">
+        <receiver-4-41 comment="false" x="15" y="15">
+            <group eventID="13" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="13" id="-1">
+                        <set-attribute comment="false" x="37" y="83">
+                            <get-byobval-1-41-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="triggers_fans"/>
+                            <int id="2" val="_STAR"/>
+                            <false comment="false" id="3" x="0" y="0"/>
+                        </set-attribute>
+                        <remove-item comment="false" x="37" y="115">
+                            <get-attribute comment="false" id="0" x="0" y="0">
+                                <get-attribute comment="false" id="0" x="0" y="0">
+                                    <get-byobval-1-41-0 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="triggers_fans"/>
+                                    <int id="2" val="_IDOL"/>
+                                </get-attribute>
+                                <int id="1" val="triggers_hero"/>
+                                <int id="2" val="_FANS"/>
+                            </get-attribute>
+                            <get-byobval-1-41-0 comment="false" id="1" x="0" y="0"/>
+                        </remove-item>
+                        <create-actor3 comment="false" x="37" y="166">
+                            <actortype eid="39" id="0"/>
+                            <get-xy comment="false" id="1" x="0" y="0">
+                                <get-byobval-1-41-0 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </get-xy>
+                            <get-xy comment="false" id="2" x="0" y="0">
+                                <get-byobval-1-41-0 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </get-xy>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <die comment="false" x="37" y="211">
+                            <get-byobval-1-41-0 comment="false" id="0" x="0" y="0"/>
+                        </die>
+                    </group>
+                    <has-snippet comment="false" id="0" x="0" y="0">
+                        <get-byobval-1-41-0 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="triggers_fans"/>
+                    </has-snippet>
+                </if>
+            </group>
+            <get-byobval-1-41-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-4-41>
+    </group>
+    <group eventID="13" id="-1"/>
+    <group eventID="14" id="0">
+        <receiver-5-43 comment="false" x="15" y="15">
+            <group eventID="14" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="14" id="-1">
+                        <create-actor3 comment="false" x="37" y="88">
+                            <actortype eid="12" id="0"/>
+                            <get-xy comment="false" id="1" x="0" y="0">
+                                <get-byobval-1-43-0 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </get-xy>
+                            <get-xy comment="false" id="2" x="0" y="0">
+                                <get-byobval-1-43-0 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="1"/>
+                            </get-xy>
+                            <int id="3" val="0"/>
+                        </create-actor3>
+                        <ignore-screen-tolerance comment="false" x="37" y="133">
+                            <ACTOR eid="lastcreated" id="0"/>
+                        </ignore-screen-tolerance>
+                        <custom-8 comment="false" x="37" y="160">
+                            <ACTOR eid="lastcreated" id="0"/>
+                        </custom-8>
+                        <add-list comment="false" x="37" y="187">
+                            <get-attribute comment="false" id="0" x="0" y="0">
+                                <get-byobval-1-43-1 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="triggers_hero"/>
+                                <int id="2" val="_FANS"/>
+                            </get-attribute>
+                            <actor comment="false" id="1" x="0" y="0">
+                                <ACTOR eid="lastcreated" id="0"/>
+                            </actor>
+                        </add-list>
+                        <set-attribute comment="false" x="37" y="225">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="triggers_fans"/>
+                            <int id="2" val="_followDistance"/>
+                            <int id="3" val="60"/>
+                        </set-attribute>
+                        <set-attribute comment="false" x="37" y="252">
+                            <ACTOR eid="lastcreated" id="0"/>
+                            <int id="1" val="triggers_fans"/>
+                            <int id="2" val="_IDOL"/>
+                            <actor comment="false" id="3" x="0" y="0">
+                                <ACTOR eid="var" id="0" vid="1"/>
+                            </actor>
+                        </set-attribute>
+                        <die comment="false" x="37" y="292">
+                            <get-byobval-1-43-0 comment="false" id="0" x="0" y="0"/>
+                        </die>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <has-snippet comment="false" id="0" x="0" y="0">
+                            <get-byobval-1-43-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="triggers_hero"/>
+                        </has-snippet>
+                        <has-snippet comment="false" id="1" x="0" y="0">
+                            <get-byobval-1-43-0 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="triggers_fansNeutral"/>
+                        </has-snippet>
+                    </and>
+                </if>
+            </group>
+            <get-byobval-1-43-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-1-43-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-5-43>
+    </group>
+    <group eventID="14" id="-1"/>
+    <group eventID="17" id="0">
+        <receiver-8-53 comment="false" x="7" y="13">
+            <group eventID="17" id="-1">
+                <return comment="false" x="18" y="43">
+                    <to-degreesradians comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <atan2 comment="false" id="1" x="0" y="0">
+                            <minus comment="false" id="0" x="0" y="0">
+                                <as-number comment="false" id="0" x="0" y="0">
+                                    <get-byobval-1-53-3 comment="false" id="0" x="0" y="0"/>
+                                </as-number>
+                                <as-number comment="false" id="1" x="0" y="0">
+                                    <get-byobval-1-53-1 comment="false" id="0" x="0" y="0"/>
+                                </as-number>
+                            </minus>
+                            <minus comment="false" id="1" x="0" y="0">
+                                <as-number comment="false" id="0" x="0" y="0">
+                                    <get-byobval-1-53-2 comment="false" id="0" x="0" y="0"/>
+                                </as-number>
+                                <as-number comment="false" id="1" x="0" y="0">
+                                    <get-byobval-1-53-0 comment="false" id="0" x="0" y="0"/>
+                                </as-number>
+                            </minus>
+                        </atan2>
+                    </to-degreesradians>
+                </return>
+            </group>
+            <get-byobval-1-53-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-1-53-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-1-53-2 comment="false" id="2" x="0" y="0"/>
+            <get-byobval-1-53-3 comment="false" id="3" x="0" y="0"/>
+        </receiver-8-53>
+    </group>
+    <group eventID="17" id="-1"/>
+    <group eventID="16" id="0">
+        <receiver-7-52 comment="false" x="15" y="15">
+            <group eventID="16" id="-1">
+                <return comment="false" x="26" y="45">
+                    <sqrt comment="false" id="0" x="0" y="0">
+                        <plus comment="false" id="0" x="0" y="0">
+                            <pow comment="false" id="0" x="0" y="0">
+                                <minus comment="false" id="0" x="0" y="0">
+                                    <as-number comment="false" id="0" x="0" y="0">
+                                        <get-byobval-1-52-0 comment="false" id="0" x="0" y="0"/>
+                                    </as-number>
+                                    <as-number comment="false" id="1" x="0" y="0">
+                                        <get-byobval-1-52-2 comment="false" id="0" x="0" y="0"/>
+                                    </as-number>
+                                </minus>
+                                <int id="1" val="2"/>
+                            </pow>
+                            <pow comment="false" id="1" x="0" y="0">
+                                <minus comment="false" id="0" x="0" y="0">
+                                    <as-number comment="false" id="0" x="0" y="0">
+                                        <get-byobval-1-52-1 comment="false" id="0" x="0" y="0"/>
+                                    </as-number>
+                                    <as-number comment="false" id="1" x="0" y="0">
+                                        <get-byobval-1-52-3 comment="false" id="0" x="0" y="0"/>
+                                    </as-number>
+                                </minus>
+                                <int id="1" val="2"/>
+                            </pow>
+                        </plus>
+                    </sqrt>
+                </return>
+            </group>
+            <get-byobval-1-52-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-1-52-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-1-52-2 comment="false" id="2" x="0" y="0"/>
+            <get-byobval-1-52-3 comment="false" id="3" x="0" y="0"/>
+        </receiver-7-52>
+    </group>
+    <group eventID="16" id="-1"/>
+</groups>

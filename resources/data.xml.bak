@@ -1,0 +1,469 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<pack>
+    <custom-block blocktag="custom-4" blocktype="ACTION" code="scripts.Design_1_1_generals._customBlock_();" desc="" global="true" gui="Missing" id="4" message="" name="" oid="-1" return="void" shared="false" snippetID="1"/>
+    <custom-block blocktag="custom-6" blocktype="ACTION" code="~.say(&quot;unit&quot;, &quot;_customBlock_&quot;);" desc="" global="false" gui="Missing" id="6" message="" name="" oid="-1" return="void" shared="false" snippetID="3">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
+    <custom-block blocktag="custom-33" blocktype="ACTION" code="~.say(&quot;triggers_hero&quot;, &quot;_customBlock_&quot;);" desc="" global="false" gui="Missing" id="33" message="" name="" oid="-1" return="void" shared="false" snippetID="4">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
+    <custom-block blocktag="custom-42" blocktype="ACTION" code="sayToScene(&quot;generals&quot;, &quot;_customBlock_&quot;);" desc="" global="false" gui="Missing" id="42" message="" name="" oid="-1" return="void" shared="false" snippetID="1"/>
+    <custom-block blocktag="custom-51" blocktype="ACTION" code="sayToScene(&quot;generals&quot;, &quot;_customBlock_&quot;);" desc="" global="false" gui="Missing" id="51" message="" name="" oid="-1" return="void" shared="false" snippetID="1"/>
+    <custom-block blocktag="custom-14" blocktype="ACTION" code="~.say(&quot;unit&quot;, &quot;_customBlock_ADD_MODIFIER&quot;, [~,~]);" desc="" global="false" gui="MODIFY %0 apply %1 with duration %2" id="14" message="ADD_MODIFIER" name="ADD_MODIFIER" oid="-1" return="void" shared="false" snippetID="3">
+        <blank name="Self" order="0" type="actor"/>
+        <blank name="Type" order="1" type="text"/>
+        <blank name="Duration" order="2" type="number"/>
+    </custom-block>
+    <custom-block blocktag="custom-10" blocktype="ACTION" code="~.say(&quot;unit&quot;, &quot;_customBlock_COMMAND_CHARGE&quot;);" desc="" global="false" gui="COMMAND %0 to CHARGE" id="10" message="COMMAND_CHARGE" name="COMMAND_CHARGE" oid="-1" return="void" shared="false" snippetID="3">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
+    <custom-block blocktag="custom-34" blocktype="NORMAL" code="cast((~.say(&quot;triggers_hero&quot;, &quot;_customBlock_COMMAND_FIRE&quot;, [~,~,~])), Bool)" desc="" global="false" gui="COMMAND %0 to FIRE %1 to ( %2 , %3 )" id="34" message="COMMAND_FIRE" name="COMMAND_FIRE" oid="-1" return="bool" shared="false" snippetID="4">
+        <blank name="Self" order="0" type="actor"/>
+        <blank name="Fan" order="1" type="actor"/>
+        <blank name="locX" order="2" type="number"/>
+        <blank name="locY" order="3" type="number"/>
+    </custom-block>
+    <custom-block blocktag="custom-17" blocktype="ACTION" code="~.say(&quot;unit&quot;, &quot;_customBlock_COMMAND_FLY&quot;, [~,~]);" desc="" global="false" gui="COMMAND %0 to FLY towards X ( %1 ), Y ( %2 )" id="17" message="COMMAND_FLY" name="COMMAND_FLY" oid="-1" return="void" shared="false" snippetID="3">
+        <blank name="Self" order="0" type="actor"/>
+        <blank name="pointX" order="1" type="number"/>
+        <blank name="pointY" order="2" type="number"/>
+    </custom-block>
+    <custom-block blocktag="custom-54" blocktype="ACTION" code="~.say(&quot;unit&quot;, &quot;_customBlock_COMMAND_FLY_ANGLE&quot;, [~]);" desc="" global="false" gui="COMMAND %0 to FLY towards ANGLE %1" id="54" message="COMMAND_FLY_ANGLE" name="COMMAND_FLY_ANGLE" oid="-1" return="void" shared="false" snippetID="3">
+        <blank name="Self" order="0" type="actor"/>
+        <blank name="Angle" order="1" type="number"/>
+    </custom-block>
+    <custom-block blocktag="custom-9" blocktype="ACTION" code="~.say(&quot;unit&quot;, &quot;_customBlock_COMMAND_JUMP&quot;);" desc="" global="false" gui="COMMAND %0 to JUMP" id="9" message="COMMAND_JUMP" name="COMMAND_JUMP" oid="-1" return="void" shared="false" snippetID="3">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
+    <custom-block blocktag="custom-11" blocktype="ACTION" code="~.say(&quot;unit&quot;, &quot;_customBlock_COMMAND_RALLY&quot;);" desc="" global="false" gui="COMMAND %0 to RALLY" id="11" message="COMMAND_RALLY" name="COMMAND_RALLY" oid="-1" return="void" shared="false" snippetID="3">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
+    <custom-block blocktag="custom-8" blocktype="ACTION" code="~.say(&quot;unit&quot;, &quot;_customBlock_COMMAND_STOP&quot;);" desc="" global="false" gui="COMMAND %0 to STOP" id="8" message="COMMAND_STOP" name="COMMAND_STOP" oid="-1" return="void" shared="false" snippetID="3">
+        <blank name="Self" order="0" type="actor"/>
+    </custom-block>
+    <custom-block blocktag="custom-32" blocktype="NORMAL" code="cast((~.say(&quot;triggers_hero&quot;, &quot;_customBlock_COMMAND_TAP&quot;, [~])), Bool)" desc="" global="false" gui="COMMAND %0 to TAP %1" id="32" message="COMMAND_TAP" name="COMMAND_TAP" oid="-1" return="bool" shared="false" snippetID="4">
+        <blank name="Self" order="0" type="actor"/>
+        <blank name="Fan" order="1" type="actor"/>
+    </custom-block>
+    <custom-block blocktag="custom-7" blocktype="ACTION" code="~.say(&quot;unit&quot;, &quot;_customBlock_COMMAND_WALK&quot;, [~]);" desc="" global="false" gui="COMMAND %0 to WALK towards %1" id="7" message="COMMAND_WALK" name="COMMAND_WALK" oid="-1" return="void" shared="false" snippetID="3">
+        <blank name="Self" order="0" type="actor"/>
+        <blank name="Direction" order="1" type="number"/>
+    </custom-block>
+    <custom-block blocktag="custom-25" blocktype="ACTION" code="sayToScene(&quot;generals&quot;, &quot;_customBlock_DRAW_CIRCLE&quot;, [~,~,~,~,~,~,~]);" desc="" global="false" gui="DRAW CIRCLE on ( %0 , %1 ) of COLOR %2 of THICKNESS %3 of RADIUS %4 of GROWTH %5 with LIFESPAN %6" id="25" message="DRAW_CIRCLE" name="DRAW_CIRCLE" oid="-1" return="void" shared="false" snippetID="1">
+        <blank name="x" order="0" type="number"/>
+        <blank name="y" order="1" type="number"/>
+        <blank name="Color" order="2" type="color"/>
+        <blank name="Thickness" order="3" type="number"/>
+        <blank name="Radius" order="4" type="number"/>
+        <blank name="Growth" order="5" type="number"/>
+        <blank name="LifeSpan" order="6" type="number"/>
+    </custom-block>
+    <custom-block blocktag="custom-24" blocktype="ACTION" code="sayToScene(&quot;generals&quot;, &quot;_customBlock_DRAW_LINE&quot;, [~,~,~,~,~,~,~]);" desc="" global="false" gui="DRAW LINE from ( %0 , %1 ) to ( %2 , %3  ) of COLOR %4 of THICKNESS %5 with LIFESPAN %6" id="24" message="DRAW_LINE" name="DRAW_LINE" oid="-1" return="void" shared="false" snippetID="1">
+        <blank name="x1" order="0" type="number"/>
+        <blank name="y1" order="1" type="number"/>
+        <blank name="x2" order="2" type="number"/>
+        <blank name="y2" order="3" type="number"/>
+        <blank name="Color" order="4" type="color"/>
+        <blank name="Thickness" order="5" type="number"/>
+        <blank name="LifeSpan" order="6" type="number"/>
+    </custom-block>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="13" fixedrot="true" fric="0.0" gid="3" id="35" ignoreg="false" inertia="1.0" ldamp="0.0" mass="0.01" name="enemy" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="36" static="false">
+        <snippets>
+            <s enabled="true" id="3">
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val=""/>
+                <prop id="3" list="0" val=""/>
+                <prop id="4" list="0" val=""/>
+                <prop id="5" list="0" val=""/>
+                <prop id="6" list="0" val=""/>
+                <prop id="7" list="0" val=""/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="4">
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="2" val="">
+                    <TEXT key="maxHealth" order="0" value="100"/>
+                    <TEXT key="moveSpeed" order="1" value="20"/>
+                    <TEXT key="jumpHeight" order="2" value="50"/>
+                    <TEXT key="chargeMax" order="3" value="100"/>
+                    <TEXT key="chargeGain" order="4" value="2.5"/>
+                    <TEXT key="chargeDecay" order="5" value="0.25"/>
+                </prop>
+                <prop id="3" list="0" val="0"/>
+                <prop id="4" list="0" val=""/>
+                <prop id="5" list="0" val="false"/>
+                <prop id="6" list="0" val="0"/>
+                <prop id="7" list="0" val=""/>
+                <prop id="8" list="0" val="false"/>
+                <prop id="9" list="0" val="0"/>
+                <prop id="10" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="40" id="27" name="ENV_switch" shared="false" width="40">
+        <anim across="1" down="1" durations="100" height="40" id="0" loop="true" name="closed" numframes="1" originx="20" originy="20" sync="false" version="2" width="40">
+            <poly data="4,0,0,40,0,40,40,0,40" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="40" id="1" loop="true" name="open" numframes="1" originx="20" originy="20" sync="false" version="2" width="40">
+            <poly data="4,0,0,40,0,40,40,0,40" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 1" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="9" fixedrot="true" fric="0.2" gid="6" id="26" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="ENV_switch" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="27" static="true">
+        <snippets>
+            <s enabled="true" id="11">
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val=""/>
+                <prop id="3" list="0" val="false"/>
+                <prop id="4" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="40" id="29" name="ENV_switchBlock" shared="false" width="40">
+        <anim across="1" down="1" durations="100" height="40" id="0" loop="true" name="closed" numframes="1" originx="20" originy="20" sync="false" version="2" width="40">
+            <poly data="4,0,0,40,0,40,40,0,40" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="40" id="1" loop="true" name="open" numframes="1" originx="20" originy="20" sync="false" version="2" width="40"/>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="10" fixedrot="true" fric="0.2" gid="5" id="28" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="ENV_switchBlock" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="29" static="true">
+        <snippets>
+            <s enabled="true" id="12">
+                <prop id="1" list="0" val=""/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <custom-block blocktag="custom-41" blocktype="ACTION" code="sayToScene(&quot;generals&quot;, &quot;_customBlock_FAB_NEUTRALIZE&quot;, [~]);" desc="" global="false" gui="MAKE FAN %0 NEUTRAL" id="41" message="FAB_NEUTRALIZE" name="FAB_NEUTRALIZE" oid="-1" return="void" shared="false" snippetID="1">
+        <blank name="FAN" order="0" type="actor"/>
+    </custom-block>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="5" fixedrot="true" fric="0.0" gid="4" id="12" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1000.0" name="fan_1" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="13" static="false">
+        <snippets>
+            <s enabled="true" id="3">
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val=""/>
+                <prop id="3" list="0" val=""/>
+                <prop id="4" list="0" val=""/>
+                <prop id="5" list="0" val=""/>
+                <prop id="6" list="0" val=""/>
+                <prop id="7" list="0" val=""/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="6">
+                <prop id="1" list="0" val="follow"/>
+                <prop id="2" list="0" val="0"/>
+                <prop id="3" list="0" val="0"/>
+                <prop id="4" list="0" val="0"/>
+                <prop id="5" list="2" val="">
+                    <TEXT key="maxHealth" order="0" value="100"/>
+                    <TEXT key="moveSpeed" order="1" value="15"/>
+                    <TEXT key="jumpHeight" order="2" value="70"/>
+                    <TEXT key="chargeMax" order="3" value="0"/>
+                    <TEXT key="chargeGain" order="4" value="0"/>
+                    <TEXT key="chargeDecay" order="5" value="0"/>
+                </prop>
+                <prop id="6" list="0" val="0"/>
+                <prop id="7" list="0" val="0"/>
+                <prop id="8" list="0" val=""/>
+                <prop id="9" list="0" val=""/>
+                <prop id="10" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <custom-block blocktag="custom-43" blocktype="ACTION" code="sayToScene(&quot;generals&quot;, &quot;_customBlock_FAN_IDOLIZE&quot;, [~,~]);" desc="" global="false" gui="MAKE FAN %0 IDOLIZE %1" id="43" message="FAN_IDOLIZE" name="FAN_IDOLIZE" oid="-1" return="void" shared="false" snippetID="1">
+        <blank name="Fan" order="0" type="actor"/>
+        <blank name="Idol" order="1" type="actor"/>
+    </custom-block>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="18" fixedrot="true" fric="0.0" gid="7" id="39" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1000.0" name="fan_neutral" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="40" static="false">
+        <snippets>
+            <s enabled="true" id="19">
+                <prop id="1" list="0" val="follow"/>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="0" val="0.0"/>
+                <prop id="4" list="0" val="0.0"/>
+                <prop id="5" list="2" val="">
+                    <TEXT key="moveSpeed" order="0" value="3"/>
+                </prop>
+                <prop id="6" list="0" val="0.0"/>
+                <prop id="7" list="0" val="0.0"/>
+                <prop id="8" list="0" val=""/>
+                <prop id="9" list="0" val=""/>
+                <prop id="10" list="0" val="false"/>
+                <prop id="11" list="0" val="0"/>
+                <prop id="12" list="0" val=""/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="3">
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val=""/>
+                <prop id="3" list="0" val=""/>
+                <prop id="4" list="0" val=""/>
+                <prop id="5" list="0" val=""/>
+                <prop id="6" list="0" val=""/>
+                <prop id="7" list="0" val=""/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <custom-block blocktag="custom-53" blocktype="NORMAL" code="cast((sayToScene(&quot;generals&quot;, &quot;_customBlock_GET_ANGLE&quot;, [~,~,~,~])), Float)" desc="" global="false" gui="GET ANGLE from ORIGIN ( %0 , %1 ) to TARGET ( %2 , %3 )" id="53" message="GET_ANGLE" name="GET_ANGLE" oid="-1" return="number" shared="false" snippetID="1">
+        <blank name="X1" order="0" type="number"/>
+        <blank name="Y1" order="1" type="number"/>
+        <blank name="X2" order="2" type="number"/>
+        <blank name="Y2" order="3" type="number"/>
+    </custom-block>
+    <custom-block blocktag="custom-52" blocktype="NORMAL" code="cast((sayToScene(&quot;generals&quot;, &quot;_customBlock_GET_DISTANCE&quot;, [~,~,~,~])), Float)" desc="" global="false" gui="GET DISTANCE from POINT ( %0 , %1 ) to POINT ( %2 , %3 )" id="52" message="GET_DISTANCE" name="GET_DISTANCE" oid="-1" return="number" shared="false" snippetID="1">
+        <blank name="X1" order="0" type="number"/>
+        <blank name="Y1" order="1" type="number"/>
+        <blank name="X2" order="2" type="number"/>
+        <blank name="Y2" order="3" type="number"/>
+    </custom-block>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="2" fixedrot="true" fric="0.0" gid="3" id="0" ignoreg="false" inertia="1.0" ldamp="0.0" mass="0.01" name="hero" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="1" static="false">
+        <snippets>
+            <s enabled="true" id="3">
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val=""/>
+                <prop id="3" list="0" val=""/>
+                <prop id="4" list="0" val=""/>
+                <prop id="5" list="0" val=""/>
+                <prop id="6" list="0" val=""/>
+                <prop id="7" list="0" val=""/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="4">
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="2" val="">
+                    <TEXT key="maxHealth" order="0" value="100"/>
+                    <TEXT key="moveSpeed" order="1" value="20"/>
+                    <TEXT key="jumpHeight" order="2" value="50"/>
+                    <TEXT key="chargeMax" order="3" value="100"/>
+                    <TEXT key="chargeGain" order="4" value="2.5"/>
+                    <TEXT key="chargeDecay" order="5" value="0.25"/>
+                </prop>
+                <prop id="3" list="0" val="0"/>
+                <prop id="4" list="0" val=""/>
+                <prop id="5" list="0" val="false"/>
+                <prop id="6" list="0" val="0"/>
+                <prop id="7" list="0" val=""/>
+                <prop id="8" list="0" val="false"/>
+                <prop id="9" list="0" val="0"/>
+                <prop id="10" list="0" val="false"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="120" id="1" name="hero" shared="false" width="120">
+        <anim across="1" down="1" durations="100" height="120" id="0" loop="true" name="idle" numframes="1" originx="60" originy="60" sync="false" version="2" width="120">
+            <poly data="4,40,20,80,20,80,110,40,110" density="0.1" fric="0.2" gid="-1000" id="0" name="idle" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="3" down="3" durations="40,40,40,40,40,40,40,40" height="360" id="1" loop="true" name="charge" numframes="8" originx="60" originy="60" sync="false" version="2" width="360">
+            <poly data="4,40,20,80,20,80,110,40,110" density="0.1" fric="0.2" gid="-1000" id="0" name="dance" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="3" down="3" durations="40,40,40,40,40,40,40,400,40" height="360" id="2" loop="false" name="flick" numframes="9" originx="60" originy="60" sync="false" version="2" width="360">
+            <poly data="4,20,50,100,50,100,110,20,110" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 2" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="3" down="3" durations="80,80,80,80,160,400,100" height="360" id="3" loop="false" name="rally" numframes="7" originx="60" originy="60" sync="false" version="2" width="360">
+            <poly data="4,40,20,80,20,80,110,40,110" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 3" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="80,80,80" height="240" id="4" loop="false" name="jump_rise" numframes="3" originx="60" originy="60" sync="false" version="2" width="240">
+            <poly data="4,40,20,80,20,80,110,40,110" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 4" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="120" id="5" loop="true" name="jump_fall" numframes="1" originx="60" originy="60" sync="false" version="2" width="120">
+            <poly data="4,40,15,80,15,80,105,40,105" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 5" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="1" durations="160,80" height="120" id="6" loop="true" name="walk" numframes="2" originx="60" originy="60" sync="false" version="2" width="240">
+            <poly data="4,40,20,80,20,80,110,40,110" density="0.1" fric="0.2" gid="-1000" id="0" name="walk" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="120" id="7" loop="true" name="wall_grab" numframes="1" originx="60" originy="60" sync="false" version="2" width="120">
+            <poly data="4,40,20,80,20,80,110,40,110" density="0.1" fric="0.2" gid="-1000" id="0" name="wall_grab" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="40,40,40,40" height="240" id="8" loop="true" name="frozen" numframes="4" originx="60" originy="60" sync="false" version="2" width="240">
+            <poly data="4,40,20,80,20,80,110,40,110" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 3" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="60" id="13" name="hero" shared="false" width="60">
+        <anim across="1" down="1" durations="100" height="60" id="0" loop="true" name="idle" numframes="1" originx="30" originy="30" sync="false" version="2" width="60">
+            <poly data="4,20,10,40,10,40,55,20,55" density="0.1" fric="0.2" gid="-1000" id="0" name="idle" rest="0.0" sensor="true"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="60" id="1" loop="true" name="charge" numframes="1" originx="30" originy="30" sync="false" version="2" width="60">
+            <poly data="4,5,20,50,20,50,40,5,40" density="0.1" fric="0.2" gid="-1000" id="0" name="charge" rest="0.0" sensor="true"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100,100" height="120" id="3" loop="true" name="rally" numframes="4" originx="30" originy="30" sync="false" version="2" width="120">
+            <poly data="4,8,8,52,8,52,52,8,52" density="0.1" fric="0.2" gid="-1000" id="0" name="rally" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="100,100,100" height="120" id="4" loop="false" name="jump_rise" numframes="3" originx="30" originy="30" sync="false" version="2" width="120">
+            <poly data="4,20,10,40,10,40,55,20,55" density="0.1" fric="0.2" gid="-1000" id="0" name="jump_rise" rest="0.0" sensor="true"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="60" id="5" loop="false" name="jump_fall" numframes="1" originx="30" originy="30" sync="false" version="2" width="60">
+            <poly data="4,20,5,40,5,40,50,20,50" density="0.1" fric="0.2" gid="-1000" id="0" name="jump_fall" rest="0.0" sensor="true"/>
+        </anim>
+        <anim across="2" down="1" durations="100,100" height="60" id="6" loop="true" name="walk" numframes="2" originx="30" originy="30" sync="false" version="2" width="120">
+            <poly data="4,25,10,45,10,45,55,25,55" density="0.1" fric="0.2" gid="-1000" id="0" name="walk" rest="0.0" sensor="true"/>
+        </anim>
+        <anim across="2" down="1" durations="100,100" height="60" id="7" loop="true" name="hover" numframes="2" originx="30" originy="30" sync="false" version="2" width="120">
+            <poly data="4,25,10,45,10,45,55,25,55" density="0.1" fric="0.2" gid="2" id="0" name="fly" rest="0.0" sensor="true"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="60" id="8" loop="true" name="fly" numframes="1" originx="30" originy="30" sync="false" version="2" width="60">
+            <poly data="4,5,20,50,20,50,40,5,40" density="0.1" fric="0.2" gid="-1000" id="0" name="charge" rest="0.0" sensor="true"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="120" id="36" name="hero" shared="false" width="120">
+        <anim across="1" down="1" durations="100" height="120" id="0" loop="true" name="idle" numframes="1" originx="60" originy="60" sync="false" version="2" width="120">
+            <poly data="4,40,20,80,20,80,110,40,110" density="0.1" fric="0.2" gid="-1000" id="0" name="idle" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="3" down="3" durations="40,40,40,40,40,40,40,40" height="360" id="1" loop="true" name="charge" numframes="8" originx="60" originy="60" sync="false" version="2" width="360">
+            <poly data="4,40,20,80,20,80,110,40,110" density="0.1" fric="0.2" gid="-1000" id="0" name="dance" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="3" down="3" durations="40,40,40,40,40,40,40,400,40" height="360" id="2" loop="false" name="flick" numframes="9" originx="60" originy="60" sync="false" version="2" width="360">
+            <poly data="4,20,50,100,50,100,110,20,110" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 2" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="3" down="3" durations="80,80,80,80,160,400,100" height="360" id="3" loop="false" name="rally" numframes="7" originx="60" originy="60" sync="false" version="2" width="360">
+            <poly data="4,40,20,80,20,80,110,40,110" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 3" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="80,80,80" height="240" id="4" loop="false" name="jump_rise" numframes="3" originx="60" originy="60" sync="false" version="2" width="240">
+            <poly data="4,40,20,80,20,80,110,40,110" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 4" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="120" id="5" loop="true" name="jump_fall" numframes="1" originx="60" originy="60" sync="false" version="2" width="120">
+            <poly data="4,40,15,80,15,80,105,40,105" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 5" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="1" durations="160,80" height="120" id="6" loop="true" name="walk" numframes="2" originx="60" originy="60" sync="false" version="2" width="240">
+            <poly data="4,40,20,80,20,80,110,40,110" density="0.1" fric="0.2" gid="-1000" id="0" name="walk" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="120" id="7" loop="true" name="wall_grab" numframes="1" originx="60" originy="60" sync="false" version="2" width="120">
+            <poly data="4,40,20,80,20,80,110,40,110" density="0.1" fric="0.2" gid="-1000" id="0" name="wall_grab" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="40,40,40,40" height="240" id="8" loop="true" name="frozen" numframes="4" originx="60" originy="60" sync="false" version="2" width="240">
+            <poly data="4,40,20,80,20,80,110,40,110" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 3" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="60" id="40" name="hero" shared="false" width="60">
+        <anim across="1" down="1" durations="100" height="60" id="0" loop="true" name="idle" numframes="1" originx="30" originy="30" sync="false" version="2" width="60">
+            <circle data="15,15,15" density="0.1" fric="0.2" gid="-1000" id="0" name="Circle" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="1" durations="80,80" height="60" id="7" loop="true" name="hover" numframes="2" originx="30" originy="30" sync="false" version="2" width="120">
+            <circle data="15,15,15" density="0.1" fric="0.2" gid="-1000" id="0" name="Circle" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="2" down="2" durations="80,80,80,80" height="120" id="8" loop="true" name="fly" numframes="4" originx="30" originy="30" sync="false" version="2" width="120">
+            <circle data="15,15,15" density="0.1" fric="0.2" gid="-1000" id="1" name="Circle" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="160" id="49" name="hero" shared="false" width="160">
+        <anim across="1" down="1" durations="100" height="160" id="0" loop="true" name="idle" numframes="1" originx="80" originy="80" sync="false" version="2" width="160">
+            <circle data="20,60,60" density="0.1" fric="0.2" gid="-1000" id="0" name="Circle" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="160" id="1" loop="true" name="charge" numframes="1" originx="80" originy="80" sync="false" version="2" width="160">
+            <circle data="20,60,60" density="0.1" fric="0.2" gid="-1000" id="0" name="Circle" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="3" down="3" durations="80,80,80,80,80,80,80,80,80" height="480" id="3" loop="true" name="rally" numframes="9" originx="80" originy="80" sync="false" version="2" width="480">
+            <circle data="20,60,60" density="0.1" fric="0.2" gid="-1000" id="0" name="Circle" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="160" id="7" loop="true" name="hover" numframes="1" originx="80" originy="80" sync="false" version="2" width="160">
+            <circle data="20,60,60" density="0.1" fric="0.2" gid="-1000" id="0" name="Circle" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="160" id="8" loop="true" name="fly" numframes="1" originx="80" originy="80" sync="false" version="2" width="160">
+            <circle data="20,60,60" density="0.1" fric="0.2" gid="-1000" id="1" name="Circle" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="2" continuous="true" desc="" eventsnippetid="20" fixedrot="true" fric="0.0" gid="8" id="48" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1000.0" name="monster" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="49" static="false">
+        <snippets>
+            <s enabled="true" id="3">
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val=""/>
+                <prop id="3" list="0" val=""/>
+                <prop id="4" list="0" val=""/>
+                <prop id="5" list="0" val=""/>
+                <prop id="6" list="0" val=""/>
+                <prop id="7" list="0" val=""/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+            <s enabled="true" id="21">
+                <prop id="1" list="0" val=""/>
+                <prop id="2" list="0" val="0.0"/>
+                <prop id="3" list="2" val="">
+                    <TEXT key="moveSpeed" order="0" value="6"/>
+                </prop>
+                <prop id="4" list="0" val="0.0"/>
+                <prop id="5" list="0" val=""/>
+                <prop id="6" list="0" val=""/>
+                <prop id="7" list="0" val="0"/>
+                <prop id="2147483647" list="0" val="thisactor"/>
+            </s>
+        </snippets>
+    </actor>
+    <tileset across="6" atlasID="0" desc="" down="6" id="2" name="prototiles" oid="-1" shared="false" th="10" tw="10">
+        <tile collision="0" data="" durations="100" frames="0" id="0" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="1" id="1" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="2" id="2" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="3" id="9" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="4" id="28" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="5" id="35" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="6" id="3" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="7" id="4" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="8" id="5" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="9" id="10" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="10" id="29" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="11" id="36" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="12" id="6" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="13" id="7" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="14" id="8" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="15" id="11" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="16" id="30" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="17" id="37" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="18" id="12" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="19" id="13" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="20" id="14" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="21" id="15" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="22" id="31" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="23" id="38" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="24" id="16" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="25" id="17" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="26" id="18" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="27" id="19" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="28" id="32" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="29" id="39" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="30" id="20" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="31" id="21" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="32" id="22" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="33" id="23" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="34" id="33" order="-1"/>
+        <tile collision="0" data="" durations="100" frames="35" id="40" order="-1"/>
+    </tileset>
+    <custom-block blocktag="custom-18" blocktype="ACTION" code="~.say(&quot;unit&quot;, &quot;_customBlock_REMOVE_MODIFIER&quot;, [~]);" desc="" global="false" gui="REMOVE MODIFIER %1 for %0" id="18" message="REMOVE_MODIFIER" name="REMOVE_MODIFIER" oid="-1" return="void" shared="false" snippetID="3">
+        <blank name="Self" order="0" type="actor"/>
+        <blank name="Modifier" order="1" type="text"/>
+    </custom-block>
+    <custom-block blocktag="custom-16" blocktype="ACTION" code="~.say(&quot;unit&quot;, &quot;_customBlock_SET_STATUS&quot;, [~]);" desc="" global="false" gui="SET STATUS of %0 to %1" id="16" message="SET_STATUS" name="SET_STATUS" oid="-1" return="void" shared="false" snippetID="3">
+        <blank name="Self" order="0" type="actor"/>
+        <blank name="Map" order="1" type="map"/>
+    </custom-block>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="120" id="38" name="stage" shared="false" width="120">
+        <anim across="1" down="1" durations="100" height="120" id="0" loop="true" name="Animation 0" numframes="1" originx="60" originy="60" sync="false" version="2" width="120">
+            <poly data="4,0,95,120,95,120,120,0,120" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="16" fixedrot="false" fric="0.2" gid="3" id="37" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="stage" oid="-1" pausable="true" physicsMode="0" rest="0.0" shared="false" sprite="38" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="5" id="23" name="UI_camera" shared="false" width="5">
+        <anim across="1" down="1" durations="100" height="5" id="0" loop="true" name="Animation 0" numframes="1" originx="2" originy="2" sync="false" version="2" width="5">
+            <poly data="4,0,0,5,0,5,5,0,5" density="0.1" fric="0.2" gid="-1000" id="0" name="Animation 0" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="8" fixedrot="false" fric="0.2" gid="2" id="22" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="UI_camera" oid="-1" pausable="true" physicsMode="2" rest="0.0" shared="false" sprite="23" static="true">
+        <snippets/>
+    </actor>
+    <actor adamp="0.0" ascale="true" atlasID="0" bodytype="0" continuous="true" desc="" eventsnippetid="7" fixedrot="false" fric="0.2" gid="2" id="19" ignoreg="false" inertia="1.0" ldamp="0.0" mass="1.0" name="UI_skill" oid="-1" pausable="true" physicsMode="2" rest="0.0" shared="false" sprite="20" static="true">
+        <snippets/>
+    </actor>
+    <sprite atlasID="0" default="0" defaultAnimation="0" desc="" height="40" id="20" name="UI_skill" shared="false" width="40">
+        <anim across="1" down="1" durations="100" height="40" id="0" loop="true" name="missle" numframes="1" originx="20" originy="20" sync="false" version="2" width="40">
+            <poly data="4,0,0,40,0,40,40,0,40" density="0.1" fric="0.2" gid="-1000" id="0" name="missle" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="40" id="1" loop="true" name="swap" numframes="1" originx="20" originy="20" sync="false" version="2" width="40">
+            <poly data="4,0,0,40,0,40,40,0,40" density="0.1" fric="0.2" gid="-1000" id="0" name="swap" rest="0.0" sensor="false"/>
+        </anim>
+        <anim across="1" down="1" durations="100" height="40" id="2" loop="true" name="recall" numframes="1" originx="20" originy="20" sync="false" version="2" width="40">
+            <poly data="4,0,0,40,0,40,40,0,40" density="0.1" fric="0.2" gid="-1000" id="0" name="recall" rest="0.0" sensor="false"/>
+        </anim>
+    </sprite>
+</pack>

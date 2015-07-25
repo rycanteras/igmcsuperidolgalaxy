@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="1" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="1" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="1" id="-1"/>
+                    <less comment="false" id="0" x="0" y="0">
+                        <sqrt comment="false" id="0" x="0" y="0">
+                            <plus comment="false" id="0" x="0" y="0">
+                                <pow comment="false" id="0" x="0" y="0">
+                                    <minus comment="false" id="0" x="0" y="0">
+                                        <get-xy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="2"/>
+                                        </get-xy>
+                                        <get-xy comment="false" id="1" x="0" y="0">
+                                            <ACTOR eid="var" id="0" vid="1"/>
+                                            <int id="1" val="2"/>
+                                        </get-xy>
+                                    </minus>
+                                    <int id="1" val="2"/>
+                                </pow>
+                                <pow comment="false" id="1" x="0" y="0">
+                                    <minus comment="false" id="0" x="0" y="0">
+                                        <get-xy comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="3"/>
+                                        </get-xy>
+                                        <get-xy comment="false" id="1" x="0" y="0">
+                                            <ACTOR eid="var" id="0" vid="1"/>
+                                            <int id="1" val="3"/>
+                                        </get-xy>
+                                    </minus>
+                                    <int id="1" val="2"/>
+                                </pow>
+                            </plus>
+                        </sqrt>
+                        <int id="1" val="200"/>
+                    </less>
+                </if>
+                <else comment="false" x="26" y="130">
+                    <group eventID="1" id="-1"/>
+                </else>
+            </group>
+        </step>
+    </group>
+    <group eventID="1" id="-1"/>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <actors-of-type3 comment="false" x="26" y="40">
+                    <group eventID="2" id="-1">
+                        <set-val-17-1 comment="false" x="37" y="72">
+                            <actor-of-type comment="false" id="0" x="0" y="0"/>
+                        </set-val-17-1>
+                    </group>
+                    <actortype eid="37" id="0"/>
+                </actors-of-type3>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+</groups>

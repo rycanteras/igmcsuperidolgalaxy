@@ -1,0 +1,380 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="16" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="10" id="-1">
+                <empty-map comment="false" x="26" y="40">
+                    <get-val-19-9 comment="false" id="0" x="0" y="0"/>
+                </empty-map>
+            </group>
+        </step>
+    </group>
+    <group eventID="16" id="-1"/>
+    <group eventID="19" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="19" id="-1">
+                <set-map comment="false" x="26" y="40">
+                    <get-val-19-9 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="disCheck"/>
+                    <int id="2" val="320"/>
+                </set-map>
+                <actors-in-region comment="false" x="26" y="65">
+                    <group eventID="19" id="-1">
+                        <if comment="false" x="37" y="97">
+                            <group eventID="19" id="-1">
+                                <if comment="false" x="48" y="135">
+                                    <group eventID="19" id="-1">
+                                        <set-map comment="false" x="59" y="183">
+                                            <get-val-19-9 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="disCheck"/>
+                                            <custom-52 comment="false" id="2" x="0" y="0">
+                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="2"/>
+                                                </get-xy>
+                                                <get-xy comment="false" id="1" x="0" y="0">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="3"/>
+                                                </get-xy>
+                                                <get-xy comment="false" id="2" x="0" y="0">
+                                                    <actor-in-region comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="2"/>
+                                                </get-xy>
+                                                <get-xy comment="false" id="3" x="0" y="0">
+                                                    <actor-in-region comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="3"/>
+                                                </get-xy>
+                                            </custom-52>
+                                        </set-map>
+                                        <set-map comment="false" x="59" y="226">
+                                            <get-val-19-9 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="fearTarget"/>
+                                            <actor-in-region comment="false" id="2" x="0" y="0"/>
+                                        </set-map>
+                                        <set-val-19-12 comment="false" x="59" y="251">
+                                            <int id="0" val="fear"/>
+                                        </set-val-19-12>
+                                    </group>
+                                    <less comment="false" id="0" x="0" y="0">
+                                        <custom-52 comment="false" id="0" x="0" y="0">
+                                            <get-xy comment="false" id="0" x="0" y="0">
+                                                <ACTOR eid="this" id="0"/>
+                                                <int id="1" val="2"/>
+                                            </get-xy>
+                                            <get-xy comment="false" id="1" x="0" y="0">
+                                                <ACTOR eid="this" id="0"/>
+                                                <int id="1" val="3"/>
+                                            </get-xy>
+                                            <get-xy comment="false" id="2" x="0" y="0">
+                                                <actor-in-region comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="2"/>
+                                            </get-xy>
+                                            <get-xy comment="false" id="3" x="0" y="0">
+                                                <actor-in-region comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="3"/>
+                                            </get-xy>
+                                        </custom-52>
+                                        <key-value comment="false" id="1" x="0" y="0">
+                                            <get-val-19-9 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="disCheck"/>
+                                        </key-value>
+                                    </less>
+                                </if>
+                            </group>
+                            <has-snippet comment="false" id="0" x="0" y="0">
+                                <actor-in-region comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="triggers_monster"/>
+                            </has-snippet>
+                        </if>
+                    </group>
+                    <scene-get-attribute comment="false" id="0" x="0" y="0">
+                        <int id="0" val="generals"/>
+                        <int id="1" val="_ARENA"/>
+                    </scene-get-attribute>
+                </actors-in-region>
+                <if comment="false" x="26" y="307">
+                    <group eventID="19" id="-1">
+                        <set-val-19-12 comment="false" x="37" y="342">
+                            <int id="0" val="wander"/>
+                        </set-val-19-12>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <key-exists-map comment="false" id="0" x="0" y="0">
+                            <get-val-19-9 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="fearTarget"/>
+                        </key-exists-map>
+                    </not>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="19" id="-1"/>
+    <group eventID="18" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="18" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="18" id="-1">
+                        <if comment="false" x="37" y="70">
+                            <group eventID="18" id="-1">
+                                <custom-14 comment="false" x="48" y="105">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="hasted"/>
+                                    <int id="2" val="10"/>
+                                </custom-14>
+                            </group>
+                            <less comment="false" id="0" x="0" y="0">
+                                <key-value comment="false" id="0" x="0" y="0">
+                                    <get-val-19-9 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="disCheck"/>
+                                </key-value>
+                                <int id="1" val="160"/>
+                            </less>
+                        </if>
+                        <set-map comment="false" x="37" y="144">
+                            <get-val-19-9 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="angle"/>
+                            <custom-53 comment="false" id="2" x="0" y="0">
+                                <get-xy comment="false" id="0" x="0" y="0">
+                                    <key-value comment="false" id="0" x="0" y="0">
+                                        <get-val-19-9 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="fearTarget"/>
+                                    </key-value>
+                                    <int id="1" val="2"/>
+                                </get-xy>
+                                <get-xy comment="false" id="1" x="0" y="0">
+                                    <key-value comment="false" id="0" x="0" y="0">
+                                        <get-val-19-9 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="fearTarget"/>
+                                    </key-value>
+                                    <int id="1" val="3"/>
+                                </get-xy>
+                                <get-xy comment="false" id="2" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="2"/>
+                                </get-xy>
+                                <get-xy comment="false" id="3" x="0" y="0">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="3"/>
+                                </get-xy>
+                            </custom-53>
+                        </set-map>
+                        <if comment="false" x="37" y="192">
+                            <group eventID="18" id="-1">
+                                <set-map comment="false" x="48" y="227">
+                                    <get-val-19-9 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="angle"/>
+                                    <minus comment="false" id="2" x="0" y="0">
+                                        <key-value comment="false" id="0" x="0" y="0">
+                                            <get-val-19-9 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="angle"/>
+                                        </key-value>
+                                        <int id="1" val="360"/>
+                                    </minus>
+                                </set-map>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <key-value comment="false" id="0" x="0" y="0">
+                                    <get-val-19-9 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="angle"/>
+                                </key-value>
+                                <int id="1" val="360"/>
+                            </more>
+                        </if>
+                        <else-if comment="false" x="37" y="274">
+                            <group eventID="18" id="-1">
+                                <set-map comment="false" x="48" y="309">
+                                    <get-val-19-9 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="angle"/>
+                                    <plus comment="false" id="2" x="0" y="0">
+                                        <key-value comment="false" id="0" x="0" y="0">
+                                            <get-val-19-9 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="angle"/>
+                                        </key-value>
+                                        <int id="1" val="360"/>
+                                    </plus>
+                                </set-map>
+                            </group>
+                            <less comment="false" id="0" x="0" y="0">
+                                <key-value comment="false" id="0" x="0" y="0">
+                                    <get-val-19-9 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="angle"/>
+                                </key-value>
+                                <int id="1" val="0"/>
+                            </less>
+                        </else-if>
+                        <custom-54 comment="false" x="37" y="356">
+                            <ACTOR eid="this" id="0"/>
+                            <key-value comment="false" id="1" x="0" y="0">
+                                <get-val-19-9 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="angle"/>
+                            </key-value>
+                        </custom-54>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-19-12 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="fear"/>
+                    </eq>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="18" id="-1">
+        <minus comment="false" x="177" y="464">
+            <int id="0" val=""/>
+            <int id="1" val="360"/>
+        </minus>
+    </group>
+    <group eventID="5" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <set-val-19-9 comment="false" x="26" y="40">
+                    <create-map comment="false" id="0" x="0" y="0"/>
+                </set-val-19-9>
+                <set-val-19-10 comment="false" x="26" y="65">
+                    <int id="0" val="25"/>
+                </set-val-19-10>
+                <set-val-19-12 comment="false" x="26" y="85">
+                    <int id="0" val="wander"/>
+                </set-val-19-12>
+                <dolater comment="false" x="26" y="105">
+                    <group eventID="5" id="-1">
+                        <custom-16 comment="false" x="37" y="132">
+                            <ACTOR eid="this" id="0"/>
+                            <get-val-19-5 comment="false" id="1" x="0" y="0"/>
+                        </custom-16>
+                        <custom-14 comment="false" x="37" y="164">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="fly"/>
+                            <int id="2" val="99999"/>
+                        </custom-14>
+                    </group>
+                    <int id="0" val="0.1"/>
+                    <ACTOR eid="this" id="2"/>
+                </dolater>
+            </group>
+        </init>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="15" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="15" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="15" id="-1">
+                        <if comment="false" x="37" y="70">
+                            <group eventID="15" id="-1">
+                                <set-val-19-10 comment="false" x="48" y="100">
+                                    <minus comment="false" id="0" x="0" y="0">
+                                        <get-val-19-10 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="1"/>
+                                    </minus>
+                                </set-val-19-10>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <get-val-19-10 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </more>
+                        </if>
+                        <else comment="false" x="37" y="142">
+                            <group eventID="15" id="-1">
+                                <set-val-19-10 comment="false" x="48" y="162">
+                                    <randint comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="300"/>
+                                        <int id="1" val="400"/>
+                                    </randint>
+                                </set-val-19-10>
+                                <set-val-19-11 comment="false" x="48" y="187">
+                                    <randint comment="false" id="0" x="0" y="0">
+                                        <int id="0" val="150"/>
+                                        <int id="1" val="250"/>
+                                    </randint>
+                                </set-val-19-11>
+                                <custom-54 comment="false" x="48" y="212">
+                                    <ACTOR eid="this" id="0"/>
+                                    <randint comment="false" id="1" x="0" y="0">
+                                        <int id="0" val="0"/>
+                                        <int id="1" val="360"/>
+                                    </randint>
+                                </custom-54>
+                            </group>
+                        </else>
+                        <if comment="false" x="37" y="256">
+                            <group eventID="15" id="-1">
+                                <set-val-19-11 comment="false" x="48" y="286">
+                                    <minus comment="false" id="0" x="0" y="0">
+                                        <get-val-19-11 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="1"/>
+                                    </minus>
+                                </set-val-19-11>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <get-val-19-11 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="0"/>
+                            </more>
+                        </if>
+                        <else comment="false" x="37" y="328">
+                            <group eventID="15" id="-1">
+                                <custom-8 comment="false" x="48" y="348">
+                                    <ACTOR eid="this" id="0"/>
+                                </custom-8>
+                            </group>
+                        </else>
+                    </group>
+                    <eq comment="false" id="0" x="0" y="0">
+                        <get-val-19-12 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="wander"/>
+                    </eq>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="15" id="1">
+        <custom-17 comment="false" x="380" y="583">
+            <ACTOR eid="this" id="0"/>
+            <int id="1" val=""/>
+            <plus comment="false" id="2" x="0" y="0">
+                <get-xy comment="false" id="0" x="0" y="0">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="3"/>
+                </get-xy>
+                <times comment="false" id="1" x="0" y="0">
+                    <trig-master comment="false" id="0" x="0" y="0">
+                        <int id="0" val="0"/>
+                        <key-value comment="false" id="1" x="0" y="0">
+                            <get-val-19-9 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="angle"/>
+                        </key-value>
+                        <int id="2" val="0"/>
+                    </trig-master>
+                    <int id="1" val="999"/>
+                </times>
+            </plus>
+        </custom-17>
+    </group>
+    <group eventID="15" id="2">
+        <set-map comment="false" x="305" y="424">
+            <get-val-19-9 comment="false" id="0" x="0" y="0"/>
+            <int id="1" val="angle"/>
+            <int id="2" val=""/>
+        </set-map>
+    </group>
+    <group eventID="15" id="-1">
+        <plus comment="false" x="345" y="454">
+            <get-xy comment="false" id="0" x="0" y="0">
+                <ACTOR eid="this" id="0"/>
+                <int id="1" val="2"/>
+            </get-xy>
+            <times comment="false" id="1" x="0" y="0">
+                <trig-master comment="false" id="0" x="0" y="0">
+                    <int id="0" val="1"/>
+                    <int id="1" val=""/>
+                    <int id="2" val="0"/>
+                </trig-master>
+                <int id="1" val="999"/>
+            </times>
+        </plus>
+        <key-value comment="false" x="303" y="295">
+            <get-val-19-9 comment="false" id="0" x="0" y="0"/>
+            <int id="1" val="angle"/>
+        </key-value>
+    </group>
+</groups>

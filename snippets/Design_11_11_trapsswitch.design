@@ -1,0 +1,175 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-val-11-3 comment="false" x="26" y="40">
+                    <get-val-11-4 comment="false" id="0" x="0" y="0"/>
+                </set-val-11-3>
+                <set-val-11-4 comment="false" x="26" y="65">
+                    <false comment="false" id="0" x="0" y="0"/>
+                </set-val-11-4>
+            </group>
+        </step>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="3" id="-1">
+                        <clear comment="false" x="37" y="78">
+                            <int id="0" val="2"/>
+                        </clear>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <value comment="false" id="0" x="0" y="0">
+                            <int id="0" val="2"/>
+                            <int id="1" val="0"/>
+                        </value>
+                        <not comment="false" id="1" x="0" y="0">
+                            <get-val-11-3 comment="false" id="0" x="0" y="0"/>
+                        </not>
+                    </and>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="5" id="0">
+        <collide comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="5" id="-1">
+                        <if comment="false" x="37" y="93">
+                            <group eventID="5" id="-1">
+                                <if comment="false" x="48" y="131">
+                                    <group eventID="5" id="-1">
+                                        <setanim comment="false" x="59" y="169">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="open"/>
+                                        </setanim>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <getanim comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                        </getanim>
+                                        <int id="1" val="closed"/>
+                                    </eq>
+                                </if>
+                                <else-if comment="false" x="48" y="208">
+                                    <group eventID="5" id="-1">
+                                        <setanim comment="false" x="59" y="246">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="closed"/>
+                                        </setanim>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <getanim comment="false" id="0" x="0" y="0">
+                                            <ACTOR eid="this" id="0"/>
+                                        </getanim>
+                                        <int id="1" val="open"/>
+                                    </eq>
+                                </else-if>
+                                <actors-in-group comment="false" x="48" y="285">
+                                    <group eventID="5" id="-1">
+                                        <if comment="false" x="59" y="317">
+                                            <group eventID="5" id="-1">
+                                                <if comment="false" x="70" y="360">
+                                                    <group eventID="5" id="-1">
+                                                        <setanim comment="false" x="81" y="403">
+                                                            <actor-in-group comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="open"/>
+                                                        </setanim>
+                                                    </group>
+                                                    <eq comment="false" id="0" x="0" y="0">
+                                                        <getanim comment="false" id="0" x="0" y="0">
+                                                            <actor-in-group comment="false" id="0" x="0" y="0"/>
+                                                        </getanim>
+                                                        <int id="1" val="closed"/>
+                                                    </eq>
+                                                </if>
+                                                <else-if comment="false" x="70" y="447">
+                                                    <group eventID="5" id="-1">
+                                                        <setanim comment="false" x="81" y="490">
+                                                            <actor-in-group comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="closed"/>
+                                                        </setanim>
+                                                    </group>
+                                                    <eq comment="false" id="0" x="0" y="0">
+                                                        <getanim comment="false" id="0" x="0" y="0">
+                                                            <actor-in-group comment="false" id="0" x="0" y="0"/>
+                                                        </getanim>
+                                                        <int id="1" val="open"/>
+                                                    </eq>
+                                                </else-if>
+                                            </group>
+                                            <eq comment="false" id="0" x="0" y="0">
+                                                <get-attribute comment="false" id="0" x="0" y="0">
+                                                    <actor-in-group comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="traps_switchBlock"/>
+                                                    <int id="2" val="_ID"/>
+                                                </get-attribute>
+                                                <get-val-11-1 comment="false" id="1" x="0" y="0"/>
+                                            </eq>
+                                        </if>
+                                    </group>
+                                    <actorgroup eid="5" id="0"/>
+                                </actors-in-group>
+                                <set-val-11-2 comment="false" x="48" y="558">
+                                    <collide-member-of-group comment="false" id="0" x="0" y="0"/>
+                                </set-val-11-2>
+                            </group>
+                            <or comment="false" id="0" x="0" y="0">
+                                <value comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="2"/>
+                                    <int id="1" val="1"/>
+                                </value>
+                                <noteq comment="false" id="1" x="0" y="0">
+                                    <get-val-11-2 comment="false" id="0" x="0" y="0"/>
+                                    <collide-member-of-group comment="false" id="1" x="0" y="0"/>
+                                </noteq>
+                            </or>
+                        </if>
+                        <if comment="false" x="37" y="602">
+                            <group eventID="5" id="-1">
+                                <set-val-11-4 comment="false" x="48" y="640">
+                                    <true comment="false" id="0" x="0" y="0"/>
+                                </set-val-11-4>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <value comment="false" id="0" x="0" y="0">
+                                    <int id="0" val="2"/>
+                                    <int id="1" val="0"/>
+                                </value>
+                                <eq comment="false" id="1" x="0" y="0">
+                                    <get-val-11-2 comment="false" id="0" x="0" y="0"/>
+                                    <collide-member-of-group comment="false" id="1" x="0" y="0"/>
+                                </eq>
+                            </and>
+                        </if>
+                    </group>
+                    <or comment="false" id="0" x="0" y="0">
+                        <eq comment="false" id="0" x="0" y="0">
+                            <getgroup comment="false" id="0" x="0" y="0">
+                                <other-actor comment="false" id="0" x="0" y="0"/>
+                            </getgroup>
+                            <pick-group comment="false" id="1" x="0" y="0">
+                                <int id="0" val="3"/>
+                            </pick-group>
+                        </eq>
+                        <eq comment="false" id="1" x="0" y="0">
+                            <getgroup comment="false" id="0" x="0" y="0">
+                                <other-actor comment="false" id="0" x="0" y="0"/>
+                            </getgroup>
+                            <pick-group comment="false" id="1" x="0" y="0">
+                                <int id="0" val="4"/>
+                            </pick-group>
+                        </eq>
+                    </or>
+                </if>
+            </group>
+        </collide>
+    </group>
+    <group eventID="5" id="-1"/>
+</groups>

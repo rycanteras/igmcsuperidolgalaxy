@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="1" desc="" eventsnippetid="0" extheight="1280" extwidth="1680" extx="-40" exty="-40" format="3.4.0" gravx="-0.0" gravy="0.0" height="1200" id="0" name="prototype_level" revision="" savecount="0" tiled="1" tileh="40" tilew="40" type="standard" width="1600">
+    <layers>
+        <color-bg blue="255" green="255" red="255"/>
+        <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Layer 0" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+    </layers>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="3" id="0" name="hero 1" sx="1.0" sy="1.0" x="200" y="760" z="0"/>
+        <actor a="0.0" aid="2" c="true" group="6" id="26" name="ENV_switch 2" sx="1.0" sy="1.0" x="360" y="1080" z="0">
+            <snippets>
+                <s enabled="true" id="9"/>
+                <s enabled="true" id="11">
+                    <prop id="1" list="0" val="1"/>
+                    <prop id="2" list="0" val=""/>
+                    <prop id="3" list="0" val="false"/>
+                    <prop id="4" list="0" val="false"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="3" c="true" group="5" id="28" name="ENV_switchBlock 3" sx="1.0" sy="1.0" x="640" y="1080" z="0">
+            <snippets>
+                <s enabled="true" id="10"/>
+                <s enabled="true" id="12">
+                    <prop id="1" list="0" val="1"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="4" c="true" group="5" id="28" name="ENV_switchBlock 4" sx="1.0" sy="1.0" x="640" y="1040" z="0">
+            <snippets>
+                <s enabled="true" id="10"/>
+                <s enabled="true" id="12">
+                    <prop id="1" list="0" val="1"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="5" c="true" group="5" id="28" name="ENV_switchBlock 5" sx="1.0" sy="1.0" x="640" y="1000" z="0">
+            <snippets>
+                <s enabled="true" id="10"/>
+                <s enabled="true" id="12">
+                    <prop id="1" list="0" val="1"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="6" c="true" group="5" id="28" name="ENV_switchBlock 6" sx="1.0" sy="1.0" x="640" y="960" z="0">
+            <snippets>
+                <s enabled="true" id="10"/>
+                <s enabled="true" id="12">
+                    <prop id="1" list="0" val="1"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="7" c="true" group="5" id="28" name="ENV_switchBlock 7" sx="1.0" sy="1.0" x="640" y="920" z="0">
+            <snippets>
+                <s enabled="true" id="10"/>
+                <s enabled="true" id="12">
+                    <prop id="1" list="0" val="1"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="8" c="true" group="5" id="28" name="ENV_switchBlock 8" sx="1.0" sy="1.0" x="640" y="880" z="0">
+            <snippets>
+                <s enabled="true" id="10"/>
+                <s enabled="true" id="12">
+                    <prop id="1" list="0" val="1"/>
+                    <prop id="2147483647" list="0" val="thisactor"/>
+                </s>
+            </snippets>
+        </actor>
+        <actor a="0.0" aid="9" c="false" group="4" id="48" name="monster 9" sx="1.0" sy="1.0" x="720" y="920" z="0"/>
+    </actors>
+    <snippets>
+        <s enabled="true" id="1">
+            <prop id="1" list="0" val="-1"/>
+            <prop id="2" list="2" val=""/>
+            <prop id="3" list="2" val=""/>
+            <prop id="4" list="1" val=""/>
+        </s>
+    </snippets>
+    <terrain>
+        <p pts="12,1560.0,1120.0,1560.0,360.0,1320.0,360.0,1320.0,280.0,1560.0,280.0,1560.0,0.0,1600.0,0.0,1600.0,1200.0,0.0,1200.0,0.0,0.0,40.0,0.0,40.0,1120.0" x="0.0" y="0.0"/>
+        <p pts="4,0.0,0.0,360.0,0.0,360.0,80.0,0.0,80.0" x="840.0" y="560.0"/>
+        <p pts="4,0.0,80.0,0.0,0.0,320.0,0.0,320.0,80.0" x="440.0" y="800.0"/>
+    </terrain>
+    <atlases members="" retainAtlases="true"/>
+</scene>

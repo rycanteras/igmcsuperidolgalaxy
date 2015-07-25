@@ -1,0 +1,2145 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<groups>
+    <group eventID="2" id="0">
+        <init comment="false" x="15" y="15">
+            <group eventID="2" id="-1">
+                <set-val-3-5 comment="false" x="26" y="40">
+                    <create-map comment="false" id="0" x="0" y="0"/>
+                </set-val-3-5>
+                <set-val-3-3 comment="false" x="26" y="65">
+                    <create-map comment="false" id="0" x="0" y="0"/>
+                </set-val-3-3>
+                <set-val-3-6 comment="false" x="26" y="90">
+                    <create-map comment="false" id="0" x="0" y="0"/>
+                </set-val-3-6>
+                <set-val-3-7 comment="false" x="26" y="115">
+                    <create-list comment="false" id="0" x="0" y="0"/>
+                </set-val-3-7>
+                <set-map comment="false" x="26" y="140">
+                    <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="onGround"/>
+                    <false comment="false" id="2" x="0" y="0"/>
+                </set-map>
+                <set-map comment="false" x="26" y="165">
+                    <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="hitGround"/>
+                    <false comment="false" id="2" x="0" y="0"/>
+                </set-map>
+                <set-map comment="false" x="26" y="190">
+                    <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="onWall"/>
+                    <false comment="false" id="2" x="0" y="0"/>
+                </set-map>
+                <set-map comment="false" x="26" y="215">
+                    <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="hitWall"/>
+                    <false comment="false" id="2" x="0" y="0"/>
+                </set-map>
+                <set-map comment="false" x="26" y="240">
+                    <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="dir"/>
+                    <as-number comment="false" id="2" x="0" y="0">
+                        <int id="0" val="1"/>
+                    </as-number>
+                </set-map>
+                <if comment="false" x="26" y="265">
+                    <group eventID="2" id="-1">
+                        <set-val-3-1 comment="false" x="37" y="298">
+                            <create-map comment="false" id="0" x="0" y="0"/>
+                        </set-val-3-1>
+                    </group>
+                    <value comment="false" id="0" x="0" y="0">
+                        <int id="0" val="1"/>
+                        <int id="1" val="1"/>
+                    </value>
+                </if>
+                <comment-wrapper comment="false" x="26" y="335">
+                    <group eventID="2" id="-1">
+                        <if comment="false" x="37" y="355">
+                            <group eventID="2" id="-1">
+                                <set-map comment="false" x="48" y="390">
+                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="maxHealth"/>
+                                    <int id="2" val="1"/>
+                                </set-map>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <key-exists-map comment="false" id="0" x="0" y="0">
+                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="maxHealth"/>
+                                </key-exists-map>
+                            </not>
+                        </if>
+                        <if comment="false" x="37" y="427">
+                            <group eventID="2" id="-1">
+                                <set-map comment="false" x="48" y="462">
+                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="movespeed"/>
+                                    <int id="2" val="0"/>
+                                </set-map>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <key-exists-map comment="false" id="0" x="0" y="0">
+                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="movespeed"/>
+                                </key-exists-map>
+                            </not>
+                        </if>
+                        <if comment="false" x="37" y="499">
+                            <group eventID="2" id="-1">
+                                <set-map comment="false" x="48" y="534">
+                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="jumpHeight"/>
+                                    <int id="2" val="0"/>
+                                </set-map>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <key-exists-map comment="false" id="0" x="0" y="0">
+                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="jumpHeight"/>
+                                </key-exists-map>
+                            </not>
+                        </if>
+                        <if comment="false" x="37" y="571">
+                            <group eventID="2" id="-1">
+                                <set-map comment="false" x="48" y="606">
+                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="chargeMax"/>
+                                    <int id="2" val="1"/>
+                                </set-map>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <key-exists-map comment="false" id="0" x="0" y="0">
+                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="chargeMax"/>
+                                </key-exists-map>
+                            </not>
+                        </if>
+                        <if comment="false" x="37" y="643">
+                            <group eventID="2" id="-1">
+                                <set-map comment="false" x="48" y="678">
+                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="chargeGain"/>
+                                    <int id="2" val="0"/>
+                                </set-map>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <key-exists-map comment="false" id="0" x="0" y="0">
+                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="chargeGain"/>
+                                </key-exists-map>
+                            </not>
+                        </if>
+                        <if comment="false" x="37" y="715">
+                            <group eventID="2" id="-1">
+                                <set-map comment="false" x="48" y="750">
+                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="chargeDecay"/>
+                                    <int id="2" val="0"/>
+                                </set-map>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <key-exists-map comment="false" id="0" x="0" y="0">
+                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="chargeDecay"/>
+                                </key-exists-map>
+                            </not>
+                        </if>
+                    </group>
+                    <int id="0" val="SET PARAMETER KEYS"/>
+                </comment-wrapper>
+                <comment-wrapper comment="false" x="26" y="799">
+                    <group eventID="2" id="-1">
+                        <set-map comment="false" x="37" y="819">
+                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="maxHealth"/>
+                            <as-number comment="false" id="2" x="0" y="0">
+                                <key-value comment="false" id="0" x="0" y="0">
+                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="maxHealth"/>
+                                </key-value>
+                            </as-number>
+                        </set-map>
+                        <set-map comment="false" x="37" y="854">
+                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="movespeed"/>
+                            <as-number comment="false" id="2" x="0" y="0">
+                                <key-value comment="false" id="0" x="0" y="0">
+                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="movespeed"/>
+                                </key-value>
+                            </as-number>
+                        </set-map>
+                        <set-map comment="false" x="37" y="889">
+                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="jumpHeight"/>
+                            <as-number comment="false" id="2" x="0" y="0">
+                                <key-value comment="false" id="0" x="0" y="0">
+                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="jumpHeight"/>
+                                </key-value>
+                            </as-number>
+                        </set-map>
+                        <set-map comment="false" x="37" y="924">
+                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="chargeMax"/>
+                            <as-number comment="false" id="2" x="0" y="0">
+                                <key-value comment="false" id="0" x="0" y="0">
+                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="chargeMax"/>
+                                </key-value>
+                            </as-number>
+                        </set-map>
+                        <set-map comment="false" x="37" y="959">
+                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="chargeGain"/>
+                            <as-number comment="false" id="2" x="0" y="0">
+                                <key-value comment="false" id="0" x="0" y="0">
+                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="chargeGain"/>
+                                </key-value>
+                            </as-number>
+                        </set-map>
+                        <set-map comment="false" x="37" y="994">
+                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="chargeDecay"/>
+                            <as-number comment="false" id="2" x="0" y="0">
+                                <key-value comment="false" id="0" x="0" y="0">
+                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="chargeDecay"/>
+                                </key-value>
+                            </as-number>
+                        </set-map>
+                    </group>
+                    <int id="0" val="CONVERT TO NUMBER"/>
+                </comment-wrapper>
+                <comment-wrapper comment="false" x="26" y="1041">
+                    <group eventID="2" id="-1">
+                        <set-val-3-4 comment="false" x="37" y="1061">
+                            <create-map comment="false" id="0" x="0" y="0"/>
+                        </set-val-3-4>
+                        <set-map comment="false" x="37" y="1086">
+                            <get-val-3-4 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="health"/>
+                            <as-number comment="false" id="2" x="0" y="0">
+                                <key-value comment="false" id="0" x="0" y="0">
+                                    <get-val-3-4 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="maxHealth"/>
+                                </key-value>
+                            </as-number>
+                        </set-map>
+                        <set-map comment="false" x="37" y="1121">
+                            <get-val-3-4 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="charge"/>
+                            <as-number comment="false" id="2" x="0" y="0">
+                                <int id="0" val="0"/>
+                            </as-number>
+                        </set-map>
+                    </group>
+                    <int id="0" val="SET METERS"/>
+                </comment-wrapper>
+                <comment-wrapper comment="false" x="26" y="1158">
+                    <group eventID="2" id="-1">
+                        <add-list comment="false" x="37" y="1178">
+                            <get-val-3-7 comment="false" id="0" x="0" y="0"/>
+                            <pick-group comment="false" id="1" x="0" y="0">
+                                <int id="0" val="3"/>
+                            </pick-group>
+                        </add-list>
+                        <add-list comment="false" x="37" y="1211">
+                            <get-val-3-7 comment="false" id="0" x="0" y="0"/>
+                            <pick-group comment="false" id="1" x="0" y="0">
+                                <int id="0" val="1"/>
+                            </pick-group>
+                        </add-list>
+                        <add-list comment="false" x="37" y="1244">
+                            <get-val-3-7 comment="false" id="0" x="0" y="0"/>
+                            <pick-group comment="false" id="1" x="0" y="0">
+                                <int id="0" val="4"/>
+                            </pick-group>
+                        </add-list>
+                        <add-list comment="false" x="37" y="1277">
+                            <get-val-3-7 comment="false" id="0" x="0" y="0"/>
+                            <pick-group comment="false" id="1" x="0" y="0">
+                                <int id="0" val="5"/>
+                            </pick-group>
+                        </add-list>
+                        <add-list comment="false" x="37" y="1310">
+                            <get-val-3-7 comment="false" id="0" x="0" y="0"/>
+                            <pick-group comment="false" id="1" x="0" y="0">
+                                <int id="0" val="6"/>
+                            </pick-group>
+                        </add-list>
+                    </group>
+                    <int id="0" val="FLOOR COLLISION"/>
+                </comment-wrapper>
+            </group>
+        </init>
+    </group>
+    <group eventID="2" id="-1"/>
+    <group eventID="3" id="0">
+        <receiver-3-7 comment="false" x="15" y="15">
+            <group eventID="3" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="3" id="-1">
+                        <if comment="false" x="37" y="80">
+                            <group eventID="3" id="-1">
+                                <if comment="false" x="48" y="110">
+                                    <group eventID="3" id="-1">
+                                        <if comment="false" x="59" y="145">
+                                            <group eventID="3" id="-1">
+                                                <if comment="false" x="70" y="190">
+                                                    <group eventID="3" id="-1">
+                                                        <set-map comment="false" x="81" y="225">
+                                                            <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="dir"/>
+                                                            <get-byobval-3-7-1 comment="false" id="2" x="0" y="0"/>
+                                                        </set-map>
+                                                        <if comment="false" x="81" y="250">
+                                                            <group eventID="3" id="-1">
+                                                                <set-val-3-2 comment="false" x="92" y="280">
+                                                                    <int id="0" val="walk"/>
+                                                                </set-val-3-2>
+                                                            </group>
+                                                            <key-value comment="false" id="0" x="0" y="0">
+                                                                <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                                                                <int id="1" val="onGround"/>
+                                                            </key-value>
+                                                        </if>
+                                                        <if comment="false" x="81" y="312">
+                                                            <group eventID="3" id="-1">
+                                                                <set-dxy comment="false" x="92" y="342">
+                                                                    <ACTOR eid="this" id="0"/>
+                                                                    <int id="1" val="0"/>
+                                                                    <times comment="false" id="2" x="0" y="0">
+                                                                        <key-value comment="false" id="0" x="0" y="0">
+                                                                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                                                            <int id="1" val="moveSpeed"/>
+                                                                        </key-value>
+                                                                        <times comment="false" id="1" x="0" y="0">
+                                                                            <get-byobval-3-7-1 comment="false" id="0" x="0" y="0"/>
+                                                                            <int id="1" val="0.25"/>
+                                                                        </times>
+                                                                    </times>
+                                                                </set-dxy>
+                                                            </group>
+                                                            <key-exists-map comment="false" id="0" x="0" y="0">
+                                                                <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                                <int id="1" val="gravity"/>
+                                                            </key-exists-map>
+                                                        </if>
+                                                        <else-if comment="false" x="81" y="396">
+                                                            <group eventID="3" id="-1">
+                                                                <set-dxy comment="false" x="92" y="426">
+                                                                    <ACTOR eid="this" id="0"/>
+                                                                    <int id="1" val="0"/>
+                                                                    <times comment="false" id="2" x="0" y="0">
+                                                                        <key-value comment="false" id="0" x="0" y="0">
+                                                                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                                                            <int id="1" val="moveSpeed"/>
+                                                                        </key-value>
+                                                                        <times comment="false" id="1" x="0" y="0">
+                                                                            <get-byobval-3-7-1 comment="false" id="0" x="0" y="0"/>
+                                                                            <int id="1" val="2"/>
+                                                                        </times>
+                                                                    </times>
+                                                                </set-dxy>
+                                                            </group>
+                                                            <key-exists-map comment="false" id="0" x="0" y="0">
+                                                                <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                                <int id="1" val="hasted"/>
+                                                            </key-exists-map>
+                                                        </else-if>
+                                                        <else-if comment="false" x="81" y="480">
+                                                            <group eventID="3" id="-1">
+                                                                <set-dxy comment="false" x="92" y="510">
+                                                                    <ACTOR eid="this" id="0"/>
+                                                                    <int id="1" val="0"/>
+                                                                    <times comment="false" id="2" x="0" y="0">
+                                                                        <key-value comment="false" id="0" x="0" y="0">
+                                                                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                                                            <int id="1" val="moveSpeed"/>
+                                                                        </key-value>
+                                                                        <times comment="false" id="1" x="0" y="0">
+                                                                            <get-byobval-3-7-1 comment="false" id="0" x="0" y="0"/>
+                                                                            <int id="1" val="0.1"/>
+                                                                        </times>
+                                                                    </times>
+                                                                </set-dxy>
+                                                            </group>
+                                                            <key-exists-map comment="false" id="0" x="0" y="0">
+                                                                <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                                <int id="1" val="paralyzed"/>
+                                                            </key-exists-map>
+                                                        </else-if>
+                                                        <else-if comment="false" x="81" y="564">
+                                                            <group eventID="3" id="-1">
+                                                                <set-dxy comment="false" x="92" y="594">
+                                                                    <ACTOR eid="this" id="0"/>
+                                                                    <int id="1" val="0"/>
+                                                                    <times comment="false" id="2" x="0" y="0">
+                                                                        <key-value comment="false" id="0" x="0" y="0">
+                                                                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                                                            <int id="1" val="moveSpeed"/>
+                                                                        </key-value>
+                                                                        <times comment="false" id="1" x="0" y="0">
+                                                                            <get-byobval-3-7-1 comment="false" id="0" x="0" y="0"/>
+                                                                            <int id="1" val="0.35"/>
+                                                                        </times>
+                                                                    </times>
+                                                                </set-dxy>
+                                                            </group>
+                                                            <key-exists-map comment="false" id="0" x="0" y="0">
+                                                                <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                                <int id="1" val="slowed"/>
+                                                            </key-exists-map>
+                                                        </else-if>
+                                                        <else comment="false" x="81" y="648">
+                                                            <group eventID="3" id="-1">
+                                                                <set-dxy comment="false" x="92" y="668">
+                                                                    <get-byobval-3-7-0 comment="false" id="0" x="0" y="0"/>
+                                                                    <int id="1" val="0"/>
+                                                                    <times comment="false" id="2" x="0" y="0">
+                                                                        <key-value comment="false" id="0" x="0" y="0">
+                                                                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                                                            <int id="1" val="moveSpeed"/>
+                                                                        </key-value>
+                                                                        <get-byobval-3-7-1 comment="false" id="1" x="0" y="0"/>
+                                                                    </times>
+                                                                </set-dxy>
+                                                            </group>
+                                                        </else>
+                                                        <scaleTo comment="false" x="81" y="722">
+                                                            <get-byobval-3-7-0 comment="false" id="0" x="0" y="0"/>
+                                                            <times comment="false" id="1" x="0" y="0">
+                                                                <int id="0" val="100"/>
+                                                                <get-byobval-3-7-1 comment="false" id="1" x="0" y="0"/>
+                                                            </times>
+                                                            <int id="2" val="100"/>
+                                                            <int id="3" val="0"/>
+                                                            <int id="4" val="0"/>
+                                                        </scaleTo>
+                                                        <shout comment="false" x="81" y="759">
+                                                            <ACTOR eid="this" id="0"/>
+                                                            <int id="1" val="ANIMATE"/>
+                                                        </shout>
+                                                    </group>
+                                                    <not comment="false" id="0" x="0" y="0">
+                                                        <key-exists-map comment="false" id="0" x="0" y="0">
+                                                            <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="wallJump"/>
+                                                        </key-exists-map>
+                                                    </not>
+                                                </if>
+                                            </group>
+                                            <or comment="false" id="0" x="0" y="0">
+                                                <and comment="false" id="0" x="0" y="0">
+                                                    <key-value comment="false" id="0" x="0" y="0">
+                                                        <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="onWall"/>
+                                                    </key-value>
+                                                    <noteq comment="false" id="1" x="0" y="0">
+                                                        <get-byobval-3-7-1 comment="false" id="0" x="0" y="0"/>
+                                                        <key-value comment="false" id="1" x="0" y="0">
+                                                            <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="dir"/>
+                                                        </key-value>
+                                                    </noteq>
+                                                </and>
+                                                <not comment="false" id="1" x="0" y="0">
+                                                    <key-value comment="false" id="0" x="0" y="0">
+                                                        <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="onWall"/>
+                                                    </key-value>
+                                                </not>
+                                            </or>
+                                        </if>
+                                    </group>
+                                    <not comment="false" id="0" x="0" y="0">
+                                        <key-exists-map comment="false" id="0" x="0" y="0">
+                                            <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="fly"/>
+                                        </key-exists-map>
+                                    </not>
+                                </if>
+                            </group>
+                            <noteq comment="false" id="0" x="0" y="0">
+                                <get-val-3-2 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="rally"/>
+                            </noteq>
+                        </if>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <key-exists-map comment="false" id="0" x="0" y="0">
+                            <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="frozen"/>
+                        </key-exists-map>
+                    </not>
+                </if>
+            </group>
+            <get-byobval-3-7-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-3-7-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-3-7>
+    </group>
+    <group eventID="3" id="-1"/>
+    <group eventID="4" id="0">
+        <receiver-4-8 comment="false" x="15" y="15">
+            <group eventID="4" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="4" id="-1">
+                        <if comment="false" x="37" y="80">
+                            <group eventID="4" id="-1">
+                                <if comment="false" x="48" y="110">
+                                    <group eventID="4" id="-1">
+                                        <if comment="false" x="59" y="150">
+                                            <group eventID="4" id="-1">
+                                                <set-val-3-2 comment="false" x="70" y="180">
+                                                    <int id="0" val="idle"/>
+                                                </set-val-3-2>
+                                            </group>
+                                            <key-value comment="false" id="0" x="0" y="0">
+                                                <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="onGround"/>
+                                            </key-value>
+                                        </if>
+                                        <set-dxy comment="false" x="59" y="212">
+                                            <get-byobval-3-8-0 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="0"/>
+                                            <int id="2" val="0"/>
+                                        </set-dxy>
+                                    </group>
+                                    <and comment="false" id="0" x="0" y="0">
+                                        <not comment="false" id="0" x="0" y="0">
+                                            <key-exists-map comment="false" id="0" x="0" y="0">
+                                                <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="float"/>
+                                            </key-exists-map>
+                                        </not>
+                                        <not comment="false" id="1" x="0" y="0">
+                                            <key-exists-map comment="false" id="0" x="0" y="0">
+                                                <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="fly"/>
+                                            </key-exists-map>
+                                        </not>
+                                    </and>
+                                </if>
+                                <else comment="false" x="48" y="256">
+                                    <group eventID="4" id="-1">
+                                        <set-val-3-2 comment="false" x="59" y="276">
+                                            <int id="0" val="idle"/>
+                                        </set-val-3-2>
+                                        <set-dxy comment="false" x="59" y="296">
+                                            <get-byobval-3-8-0 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="0"/>
+                                            <int id="2" val="0"/>
+                                        </set-dxy>
+                                        <set-dxy comment="false" x="59" y="328">
+                                            <get-byobval-3-8-0 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="1"/>
+                                            <int id="2" val="0"/>
+                                        </set-dxy>
+                                    </group>
+                                </else>
+                                <shout comment="false" x="48" y="372">
+                                    <get-byobval-3-8-0 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="ANIMATE"/>
+                                </shout>
+                            </group>
+                            <noteq comment="false" id="0" x="0" y="0">
+                                <get-val-3-2 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="idle"/>
+                            </noteq>
+                        </if>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <key-exists-map comment="false" id="0" x="0" y="0">
+                            <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="frozen"/>
+                        </key-exists-map>
+                    </not>
+                </if>
+            </group>
+            <get-byobval-3-8-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-4-8>
+    </group>
+    <group eventID="4" id="-1">
+        <and comment="false" x="499" y="316">
+            <int id="0" val=""/>
+            <not comment="false" id="1" x="0" y="0">
+                <key-exists-map comment="false" id="0" x="0" y="0">
+                    <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="hover"/>
+                </key-exists-map>
+            </not>
+        </and>
+    </group>
+    <group eventID="5" id="0">
+        <event-custom comment="false" x="15" y="15">
+            <group eventID="5" id="-1">
+                <setanim comment="false" x="26" y="40">
+                    <ACTOR eid="this" id="0"/>
+                    <string-to-anim comment="false" id="1" x="0" y="0">
+                        <get-val-3-2 comment="false" id="0" x="0" y="0"/>
+                    </string-to-anim>
+                </setanim>
+                <if comment="false" x="26" y="77">
+                    <group eventID="5" id="-1">
+                        <setangle comment="false" x="37" y="117">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                        </setangle>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <not comment="false" id="0" x="0" y="0">
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-3-2 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="fly"/>
+                            </eq>
+                        </not>
+                        <not comment="false" id="1" x="0" y="0">
+                            <key-exists-map comment="false" id="0" x="0" y="0">
+                                <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="rotating"/>
+                            </key-exists-map>
+                        </not>
+                    </and>
+                </if>
+            </group>
+            <int id="0" val="ANIMATE"/>
+        </event-custom>
+    </group>
+    <group eventID="5" id="-1"/>
+    <group eventID="6" id="0">
+        <receiver-5-9 comment="false" x="15" y="15">
+            <group eventID="6" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="6" id="-1">
+                        <if comment="false" x="37" y="80">
+                            <group eventID="6" id="-1">
+                                <if comment="false" x="48" y="110">
+                                    <group eventID="6" id="-1">
+                                        <if comment="false" x="59" y="145">
+                                            <group eventID="6" id="-1">
+                                                <if comment="false" x="70" y="175">
+                                                    <group eventID="6" id="-1">
+                                                        <custom-14 comment="false" x="81" y="210">
+                                                            <ACTOR eid="this" id="0"/>
+                                                            <int id="1" val="wallJump"/>
+                                                            <int id="2" val="10"/>
+                                                        </custom-14>
+                                                        <set-xy comment="false" x="81" y="237">
+                                                            <ACTOR eid="this" id="0"/>
+                                                            <int id="1" val="0"/>
+                                                            <plus comment="false" id="2" x="0" y="0">
+                                                                <get-xy comment="false" id="0" x="0" y="0">
+                                                                    <ACTOR eid="this" id="0"/>
+                                                                    <int id="1" val="0"/>
+                                                                </get-xy>
+                                                                <times comment="false" id="1" x="0" y="0">
+                                                                    <key-value comment="false" id="0" x="0" y="0">
+                                                                        <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                                                                        <int id="1" val="dir"/>
+                                                                    </key-value>
+                                                                    <int id="1" val="-1"/>
+                                                                </times>
+                                                            </plus>
+                                                        </set-xy>
+                                                        <set-dxy comment="false" x="81" y="284">
+                                                            <ACTOR eid="this" id="0"/>
+                                                            <int id="1" val="0"/>
+                                                            <times comment="false" id="2" x="0" y="0">
+                                                                <times comment="false" id="0" x="0" y="0">
+                                                                    <key-value comment="false" id="0" x="0" y="0">
+                                                                        <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                                                        <int id="1" val="moveSpeed"/>
+                                                                    </key-value>
+                                                                    <int id="1" val="-2"/>
+                                                                </times>
+                                                                <key-value comment="false" id="1" x="0" y="0">
+                                                                    <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                                                                    <int id="1" val="dir"/>
+                                                                </key-value>
+                                                            </times>
+                                                        </set-dxy>
+                                                    </group>
+                                                    <not comment="false" id="0" x="0" y="0">
+                                                        <key-exists-map comment="false" id="0" x="0" y="0">
+                                                            <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="wallJump"/>
+                                                        </key-exists-map>
+                                                    </not>
+                                                </if>
+                                            </group>
+                                            <key-value comment="false" id="0" x="0" y="0">
+                                                <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="onWall"/>
+                                            </key-value>
+                                        </if>
+                                        <set-dxy comment="false" x="59" y="355">
+                                            <get-byobval-3-9-0 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="1"/>
+                                            <times comment="false" id="2" x="0" y="0">
+                                                <key-value comment="false" id="0" x="0" y="0">
+                                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="jumpHeight"/>
+                                                </key-value>
+                                                <int id="1" val="-1"/>
+                                            </times>
+                                        </set-dxy>
+                                    </group>
+                                    <or comment="false" id="0" x="0" y="0">
+                                        <key-value comment="false" id="0" x="0" y="0">
+                                            <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="onGround"/>
+                                        </key-value>
+                                        <key-value comment="false" id="1" x="0" y="0">
+                                            <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="onWall"/>
+                                        </key-value>
+                                    </or>
+                                </if>
+                            </group>
+                            <noteq comment="false" id="0" x="0" y="0">
+                                <get-val-3-2 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="rally"/>
+                            </noteq>
+                        </if>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <key-exists-map comment="false" id="0" x="0" y="0">
+                            <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="frozen"/>
+                        </key-exists-map>
+                    </not>
+                </if>
+            </group>
+            <get-byobval-3-9-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-5-9>
+    </group>
+    <group eventID="6" id="1">
+        <if comment="false" x="69" y="486">
+            <group eventID="6" id="-1"/>
+            <key-exists-map comment="false" id="0" x="0" y="0">
+                <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                <int id="1" val="gravity"/>
+            </key-exists-map>
+        </if>
+        <else comment="false" x="69" y="548">
+            <group eventID="6" id="-1">
+                <set-dxy comment="false" x="80" y="568">
+                    <ACTOR eid="this" id="0"/>
+                    <int id="1" val="1"/>
+                    <times comment="false" id="2" x="0" y="0">
+                        <key-value comment="false" id="0" x="0" y="0">
+                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="jumpHeight"/>
+                        </key-value>
+                        <int id="1" val="-1"/>
+                    </times>
+                </set-dxy>
+            </group>
+        </else>
+    </group>
+    <group eventID="6" id="-1"/>
+    <group eventID="9" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="9" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="9" id="-1">
+                        <if comment="false" x="37" y="75">
+                            <group eventID="9" id="-1">
+                                <if comment="false" x="48" y="110">
+                                    <group eventID="9" id="-1">
+                                        <if comment="false" x="59" y="145">
+                                            <group eventID="9" id="-1">
+                                                <if comment="false" x="70" y="180">
+                                                    <group eventID="9" id="-1">
+                                                        <if comment="false" x="81" y="215">
+                                                            <group eventID="9" id="-1">
+                                                                <if comment="false" x="92" y="245">
+                                                                    <group eventID="9" id="-1">
+                                                                        <set-dxy comment="false" x="103" y="283">
+                                                                            <ACTOR eid="this" id="0"/>
+                                                                            <int id="1" val="1"/>
+                                                                            <plus comment="false" id="2" x="0" y="0">
+                                                                                <get-dxy comment="false" id="0" x="0" y="0">
+                                                                                    <ACTOR eid="this" id="0"/>
+                                                                                    <int id="1" val="1"/>
+                                                                                </get-dxy>
+                                                                                <int id="1" val="2.5"/>
+                                                                            </plus>
+                                                                        </set-dxy>
+                                                                    </group>
+                                                                    <less comment="false" id="0" x="0" y="0">
+                                                                        <get-dxy comment="false" id="0" x="0" y="0">
+                                                                            <ACTOR eid="this" id="0"/>
+                                                                            <int id="1" val="1"/>
+                                                                        </get-dxy>
+                                                                        <int id="1" val="0"/>
+                                                                    </less>
+                                                                </if>
+                                                                <else comment="false" x="92" y="340">
+                                                                    <group eventID="9" id="-1">
+                                                                        <set-dxy comment="false" x="103" y="360">
+                                                                            <ACTOR eid="this" id="0"/>
+                                                                            <int id="1" val="1"/>
+                                                                            <plus comment="false" id="2" x="0" y="0">
+                                                                                <get-dxy comment="false" id="0" x="0" y="0">
+                                                                                    <ACTOR eid="this" id="0"/>
+                                                                                    <int id="1" val="1"/>
+                                                                                </get-dxy>
+                                                                                <int id="1" val="5"/>
+                                                                            </plus>
+                                                                        </set-dxy>
+                                                                    </group>
+                                                                </else>
+                                                            </group>
+                                                            <key-exists-map comment="false" id="0" x="0" y="0">
+                                                                <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                                <int id="1" val="gravity"/>
+                                                            </key-exists-map>
+                                                        </if>
+                                                        <else comment="false" x="81" y="429">
+                                                            <group eventID="9" id="-1">
+                                                                <set-dxy comment="false" x="92" y="449">
+                                                                    <ACTOR eid="this" id="0"/>
+                                                                    <int id="1" val="1"/>
+                                                                    <plus comment="false" id="2" x="0" y="0">
+                                                                        <get-dxy comment="false" id="0" x="0" y="0">
+                                                                            <ACTOR eid="this" id="0"/>
+                                                                            <int id="1" val="1"/>
+                                                                        </get-dxy>
+                                                                        <int id="1" val="1"/>
+                                                                    </plus>
+                                                                </set-dxy>
+                                                            </group>
+                                                        </else>
+                                                        <if comment="false" x="81" y="506">
+                                                            <group eventID="9" id="-1">
+                                                                <set-val-3-2 comment="false" x="92" y="544">
+                                                                    <int id="0" val="jump_fall"/>
+                                                                </set-val-3-2>
+                                                            </group>
+                                                            <more comment="false" id="0" x="0" y="0">
+                                                                <get-dxy comment="false" id="0" x="0" y="0">
+                                                                    <ACTOR eid="this" id="0"/>
+                                                                    <int id="1" val="1"/>
+                                                                </get-dxy>
+                                                                <int id="1" val="5"/>
+                                                            </more>
+                                                        </if>
+                                                        <else comment="false" x="81" y="576">
+                                                            <group eventID="9" id="-1">
+                                                                <set-val-3-2 comment="false" x="92" y="596">
+                                                                    <int id="0" val="jump_rise"/>
+                                                                </set-val-3-2>
+                                                            </group>
+                                                        </else>
+                                                    </group>
+                                                    <not comment="false" id="0" x="0" y="0">
+                                                        <key-value comment="false" id="0" x="0" y="0">
+                                                            <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="onWall"/>
+                                                        </key-value>
+                                                    </not>
+                                                </if>
+                                                <else comment="false" x="70" y="640">
+                                                    <group eventID="9" id="-1">
+                                                        <set-dxy comment="false" x="81" y="660">
+                                                            <ACTOR eid="this" id="0"/>
+                                                            <int id="1" val="1"/>
+                                                            <int id="2" val="8"/>
+                                                        </set-dxy>
+                                                        <set-val-3-2 comment="false" x="81" y="687">
+                                                            <int id="0" val="wall_grab"/>
+                                                        </set-val-3-2>
+                                                    </group>
+                                                </else>
+                                                <shout comment="false" x="70" y="719">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="ANIMATE"/>
+                                                </shout>
+                                            </group>
+                                            <not comment="false" id="0" x="0" y="0">
+                                                <key-exists-map comment="false" id="0" x="0" y="0">
+                                                    <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="float"/>
+                                                </key-exists-map>
+                                            </not>
+                                        </if>
+                                        <else comment="false" x="59" y="758">
+                                            <group eventID="9" id="-1">
+                                                <set-dxy comment="false" x="70" y="778">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <int id="1" val="1"/>
+                                                    <int id="2" val="0"/>
+                                                </set-dxy>
+                                            </group>
+                                        </else>
+                                    </group>
+                                    <not comment="false" id="0" x="0" y="0">
+                                        <key-exists-map comment="false" id="0" x="0" y="0">
+                                            <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="fly"/>
+                                        </key-exists-map>
+                                    </not>
+                                </if>
+                            </group>
+                            <not comment="false" id="0" x="0" y="0">
+                                <key-value comment="false" id="0" x="0" y="0">
+                                    <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="onGround"/>
+                                </key-value>
+                            </not>
+                        </if>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <key-exists-map comment="false" id="0" x="0" y="0">
+                            <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="frozen"/>
+                        </key-exists-map>
+                    </not>
+                </if>
+                <else comment="false" x="26" y="853">
+                    <group eventID="9" id="-1">
+                        <set-dxy comment="false" x="37" y="873">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="0"/>
+                            <int id="2" val="0"/>
+                        </set-dxy>
+                        <set-dxy comment="false" x="37" y="900">
+                            <ACTOR eid="this" id="0"/>
+                            <int id="1" val="1"/>
+                            <int id="2" val="0"/>
+                        </set-dxy>
+                    </group>
+                </else>
+            </group>
+        </step>
+    </group>
+    <group eventID="9" id="-1"/>
+    <group eventID="11" id="0">
+        <receiver-6-10 comment="false" x="15" y="15">
+            <group eventID="11" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="11" id="-1">
+                        <if comment="false" x="37" y="80">
+                            <group eventID="11" id="-1">
+                                <if comment="false" x="48" y="110">
+                                    <group eventID="11" id="-1">
+                                        <set-dxy comment="false" x="59" y="140">
+                                            <get-byobval-3-10-0 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="0"/>
+                                            <int id="2" val="0"/>
+                                        </set-dxy>
+                                        <if comment="false" x="59" y="172">
+                                            <group eventID="11" id="-1">
+                                                <set-map comment="false" x="70" y="212">
+                                                    <get-val-3-4 comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="charge"/>
+                                                    <plus comment="false" id="2" x="0" y="0">
+                                                        <key-value comment="false" id="0" x="0" y="0">
+                                                            <get-val-3-4 comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="charge"/>
+                                                        </key-value>
+                                                        <key-value comment="false" id="1" x="0" y="0">
+                                                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="chargeGain"/>
+                                                        </key-value>
+                                                    </plus>
+                                                </set-map>
+                                                <set-val-3-2 comment="false" x="70" y="247">
+                                                    <int id="0" val="charge"/>
+                                                </set-val-3-2>
+                                                <shout comment="false" x="70" y="267">
+                                                    <get-byobval-3-10-0 comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="CHARGE"/>
+                                                </shout>
+                                            </group>
+                                            <lesseq comment="false" id="0" x="0" y="0">
+                                                <plus comment="false" id="0" x="0" y="0">
+                                                    <key-value comment="false" id="0" x="0" y="0">
+                                                        <get-val-3-4 comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="charge"/>
+                                                    </key-value>
+                                                    <key-value comment="false" id="1" x="0" y="0">
+                                                        <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="chargeGain"/>
+                                                    </key-value>
+                                                </plus>
+                                                <key-value comment="false" id="1" x="0" y="0">
+                                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="chargeMax"/>
+                                                </key-value>
+                                            </lesseq>
+                                        </if>
+                                        <else comment="false" x="59" y="311">
+                                            <group eventID="11" id="-1">
+                                                <custom-11 comment="false" x="70" y="331">
+                                                    <get-byobval-3-10-0 comment="false" id="0" x="0" y="0"/>
+                                                </custom-11>
+                                            </group>
+                                        </else>
+                                        <shout comment="false" x="59" y="375">
+                                            <get-byobval-3-10-0 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="ANIMATE"/>
+                                        </shout>
+                                    </group>
+                                    <key-value comment="false" id="0" x="0" y="0">
+                                        <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="onGround"/>
+                                    </key-value>
+                                </if>
+                            </group>
+                            <noteq comment="false" id="0" x="0" y="0">
+                                <get-val-3-2 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="rally"/>
+                            </noteq>
+                        </if>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <key-exists-map comment="false" id="0" x="0" y="0">
+                            <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="frozen"/>
+                        </key-exists-map>
+                    </not>
+                </if>
+            </group>
+            <get-byobval-3-10-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-6-10>
+    </group>
+    <group eventID="11" id="-1"/>
+    <group eventID="13" id="0">
+        <receiver-7-11 comment="false" x="15" y="15">
+            <group eventID="13" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="13" id="-1">
+                        <if comment="false" x="37" y="80">
+                            <group eventID="13" id="-1">
+                                <set-dxy comment="false" x="48" y="110">
+                                    <ACTOR eid="this" id="0"/>
+                                    <int id="1" val="0"/>
+                                    <int id="2" val="0"/>
+                                </set-dxy>
+                                <set-map comment="false" x="48" y="137">
+                                    <get-val-3-4 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="charge"/>
+                                    <key-value comment="false" id="2" x="0" y="0">
+                                        <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="chargeMax"/>
+                                    </key-value>
+                                </set-map>
+                                <set-val-3-2 comment="false" x="48" y="167">
+                                    <int id="0" val="rally"/>
+                                </set-val-3-2>
+                                <shout comment="false" x="48" y="187">
+                                    <get-byobval-3-11-0 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="RALLY"/>
+                                </shout>
+                                <shout comment="false" x="48" y="219">
+                                    <get-byobval-3-11-0 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="ANIMATE"/>
+                                </shout>
+                            </group>
+                            <noteq comment="false" id="0" x="0" y="0">
+                                <get-val-3-2 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="rally"/>
+                            </noteq>
+                        </if>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <key-exists-map comment="false" id="0" x="0" y="0">
+                            <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="frozen"/>
+                        </key-exists-map>
+                    </not>
+                </if>
+            </group>
+            <get-byobval-3-11-0 comment="false" id="0" x="0" y="0"/>
+        </receiver-7-11>
+    </group>
+    <group eventID="13" id="-1"/>
+    <group eventID="14" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="14" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="14" id="-1">
+                        <if comment="false" x="37" y="80">
+                            <group eventID="14" id="-1">
+                                <set-map comment="false" x="48" y="120">
+                                    <get-val-3-4 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="charge"/>
+                                    <minus comment="false" id="2" x="0" y="0">
+                                        <key-value comment="false" id="0" x="0" y="0">
+                                            <get-val-3-4 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="charge"/>
+                                        </key-value>
+                                        <key-value comment="false" id="1" x="0" y="0">
+                                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="chargeDecay"/>
+                                        </key-value>
+                                    </minus>
+                                </set-map>
+                            </group>
+                            <moreeq comment="false" id="0" x="0" y="0">
+                                <minus comment="false" id="0" x="0" y="0">
+                                    <key-value comment="false" id="0" x="0" y="0">
+                                        <get-val-3-4 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="charge"/>
+                                    </key-value>
+                                    <key-value comment="false" id="1" x="0" y="0">
+                                        <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="chargeDecay"/>
+                                    </key-value>
+                                </minus>
+                                <int id="1" val="0"/>
+                            </moreeq>
+                        </if>
+                        <else comment="false" x="37" y="167">
+                            <group eventID="14" id="-1">
+                                <set-map comment="false" x="48" y="187">
+                                    <get-val-3-4 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="charge"/>
+                                    <int id="2" val="0"/>
+                                </set-map>
+                            </group>
+                        </else>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <not comment="false" id="0" x="0" y="0">
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-3-2 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="charge"/>
+                            </eq>
+                        </not>
+                        <not comment="false" id="1" x="0" y="0">
+                            <eq comment="false" id="0" x="0" y="0">
+                                <get-val-3-2 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="rally"/>
+                            </eq>
+                        </not>
+                    </and>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="14" id="-1"/>
+    <group eventID="15" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="15" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="15" id="-1">
+                        <if comment="false" x="37" y="70">
+                            <group eventID="15" id="-1">
+                                <if comment="false" x="48" y="105">
+                                    <group eventID="15" id="-1">
+                                        <custom-8 comment="false" x="59" y="145">
+                                            <ACTOR eid="this" id="0"/>
+                                        </custom-8>
+                                    </group>
+                                    <and comment="false" id="0" x="0" y="0">
+                                        <noteq comment="false" id="0" x="0" y="0">
+                                            <get-val-3-2 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="walk"/>
+                                        </noteq>
+                                        <or comment="false" id="1" x="0" y="0">
+                                            <eq comment="false" id="0" x="0" y="0">
+                                                <get-val-3-2 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="jump_rise"/>
+                                            </eq>
+                                            <eq comment="false" id="1" x="0" y="0">
+                                                <get-val-3-2 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="jump_fall"/>
+                                            </eq>
+                                        </or>
+                                    </and>
+                                </if>
+                            </group>
+                            <and comment="false" id="0" x="0" y="0">
+                                <noteq comment="false" id="0" x="0" y="0">
+                                    <get-val-3-2 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="charge"/>
+                                </noteq>
+                                <noteq comment="false" id="1" x="0" y="0">
+                                    <get-val-3-2 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="rally"/>
+                                </noteq>
+                            </and>
+                        </if>
+                    </group>
+                    <key-value comment="false" id="0" x="0" y="0">
+                        <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                        <int id="1" val="onGround"/>
+                    </key-value>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="15" id="-1"/>
+    <group eventID="17" id="0">
+        <receiver-8-14 comment="false" x="15" y="15">
+            <group eventID="17" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="17" id="-1">
+                        <if comment="false" x="37" y="75">
+                            <group eventID="17" id="-1">
+                                <set-map comment="false" x="48" y="110">
+                                    <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                    <get-byobval-3-14-1 comment="false" id="1" x="0" y="0"/>
+                                    <get-byobval-3-14-2 comment="false" id="2" x="0" y="0"/>
+                                </set-map>
+                            </group>
+                            <more comment="false" id="0" x="0" y="0">
+                                <get-byobval-3-14-2 comment="false" id="0" x="0" y="0"/>
+                                <key-value comment="false" id="1" x="0" y="0">
+                                    <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                    <get-byobval-3-14-1 comment="false" id="1" x="0" y="0"/>
+                                </key-value>
+                            </more>
+                        </if>
+                    </group>
+                    <key-exists-map comment="false" id="0" x="0" y="0">
+                        <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                        <get-byobval-3-14-1 comment="false" id="1" x="0" y="0"/>
+                    </key-exists-map>
+                </if>
+                <else comment="false" x="26" y="159">
+                    <group eventID="17" id="-1">
+                        <set-map comment="false" x="37" y="179">
+                            <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                            <get-byobval-3-14-1 comment="false" id="1" x="0" y="0"/>
+                            <get-byobval-3-14-2 comment="false" id="2" x="0" y="0"/>
+                        </set-map>
+                    </group>
+                </else>
+            </group>
+            <get-byobval-3-14-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-3-14-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-3-14-2 comment="false" id="2" x="0" y="0"/>
+        </receiver-8-14>
+    </group>
+    <group eventID="17" id="-1"/>
+    <group eventID="16" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="16" id="-1">
+                <for-each-map comment="false" x="26" y="40">
+                    <group eventID="16" id="-1">
+                        <if comment="false" x="37" y="72">
+                            <group eventID="16" id="-1">
+                                <if comment="false" x="48" y="107">
+                                    <group eventID="16" id="-1">
+                                        <set-map comment="false" x="59" y="142">
+                                            <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                            <for-each-item comment="false" id="1" x="0" y="0"/>
+                                            <minus comment="false" id="2" x="0" y="0">
+                                                <key-value comment="false" id="0" x="0" y="0">
+                                                    <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                    <for-each-item comment="false" id="1" x="0" y="0"/>
+                                                </key-value>
+                                                <int id="1" val="1"/>
+                                            </minus>
+                                        </set-map>
+                                    </group>
+                                    <more comment="false" id="0" x="0" y="0">
+                                        <key-value comment="false" id="0" x="0" y="0">
+                                            <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                            <for-each-item comment="false" id="1" x="0" y="0"/>
+                                        </key-value>
+                                        <int id="1" val="0"/>
+                                    </more>
+                                </if>
+                                <else comment="false" x="48" y="189">
+                                    <group eventID="16" id="-1">
+                                        <remove-map comment="false" x="59" y="209">
+                                            <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                            <for-each-item comment="false" id="1" x="0" y="0"/>
+                                        </remove-map>
+                                    </group>
+                                </else>
+                            </group>
+                            <less comment="false" id="0" x="0" y="0">
+                                <key-value comment="false" id="0" x="0" y="0">
+                                    <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                    <for-each-item comment="false" id="1" x="0" y="0"/>
+                                </key-value>
+                                <int id="1" val="99999"/>
+                            </less>
+                        </if>
+                    </group>
+                    <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                    <int id="1" val="0"/>
+                </for-each-map>
+            </group>
+        </step>
+    </group>
+    <group eventID="16" id="-1"/>
+    <group eventID="18" id="0">
+        <receiver-10-16 comment="false" x="15" y="15">
+            <group eventID="18" id="-1">
+                <set-val-3-1 comment="false" x="26" y="45">
+                    <get-byobval-3-16-1 comment="false" id="0" x="0" y="0"/>
+                </set-val-3-1>
+                <comment-wrapper comment="false" x="26" y="70">
+                    <group eventID="18" id="-1">
+                        <set-map comment="false" x="37" y="90">
+                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="maxHealth"/>
+                            <as-number comment="false" id="2" x="0" y="0">
+                                <key-value comment="false" id="0" x="0" y="0">
+                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="maxHealth"/>
+                                </key-value>
+                            </as-number>
+                        </set-map>
+                        <set-map comment="false" x="37" y="125">
+                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="movespeed"/>
+                            <as-number comment="false" id="2" x="0" y="0">
+                                <key-value comment="false" id="0" x="0" y="0">
+                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="movespeed"/>
+                                </key-value>
+                            </as-number>
+                        </set-map>
+                        <set-map comment="false" x="37" y="160">
+                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="jumpHeight"/>
+                            <as-number comment="false" id="2" x="0" y="0">
+                                <key-value comment="false" id="0" x="0" y="0">
+                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="jumpHeight"/>
+                                </key-value>
+                            </as-number>
+                        </set-map>
+                        <set-map comment="false" x="37" y="195">
+                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="chargeMax"/>
+                            <as-number comment="false" id="2" x="0" y="0">
+                                <key-value comment="false" id="0" x="0" y="0">
+                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="chargeMax"/>
+                                </key-value>
+                            </as-number>
+                        </set-map>
+                        <set-map comment="false" x="37" y="230">
+                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="chargeGain"/>
+                            <as-number comment="false" id="2" x="0" y="0">
+                                <key-value comment="false" id="0" x="0" y="0">
+                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="chargeGain"/>
+                                </key-value>
+                            </as-number>
+                        </set-map>
+                        <set-map comment="false" x="37" y="265">
+                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="chargeDecay"/>
+                            <as-number comment="false" id="2" x="0" y="0">
+                                <key-value comment="false" id="0" x="0" y="0">
+                                    <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="chargeDecay"/>
+                                </key-value>
+                            </as-number>
+                        </set-map>
+                    </group>
+                    <int id="0" val="CONVERT TO NUMBER"/>
+                </comment-wrapper>
+            </group>
+            <get-byobval-3-16-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-3-16-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-10-16>
+    </group>
+    <group eventID="18" id="-1"/>
+    <group eventID="21" id="0">
+        <collide comment="false" x="15" y="15">
+            <group eventID="21" id="-1">
+                <if comment="false" x="26" y="45">
+                    <group eventID="21" id="-1">
+                        <set-map comment="false" x="37" y="78">
+                            <get-val-3-6 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="yesCol"/>
+                            <false comment="false" id="2" x="0" y="0"/>
+                        </set-map>
+                        <for-each comment="false" x="37" y="103">
+                            <group eventID="21" id="-1">
+                                <if comment="false" x="48" y="128">
+                                    <group eventID="21" id="-1">
+                                        <set-map comment="false" x="59" y="171">
+                                            <get-val-3-6 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="yesCol"/>
+                                            <true comment="false" id="2" x="0" y="0"/>
+                                        </set-map>
+                                    </group>
+                                    <eq comment="false" id="0" x="0" y="0">
+                                        <getgroup comment="false" id="0" x="0" y="0">
+                                            <other-actor comment="false" id="0" x="0" y="0"/>
+                                        </getgroup>
+                                        <for-each-item comment="false" id="1" x="0" y="0"/>
+                                    </eq>
+                                </if>
+                            </group>
+                            <get-val-3-7 comment="false" id="0" x="0" y="0"/>
+                        </for-each>
+                        <if comment="false" x="37" y="220">
+                            <group eventID="21" id="-1">
+                                <if comment="false" x="48" y="250">
+                                    <group eventID="21" id="-1">
+                                        <if comment="false" x="59" y="290">
+                                            <group eventID="21" id="-1">
+                                                <set-map comment="false" x="70" y="323">
+                                                    <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="hitGround"/>
+                                                    <true comment="false" id="2" x="0" y="0"/>
+                                                </set-map>
+                                            </group>
+                                            <collision-bottom comment="false" id="0" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                                <int id="1" val="0"/>
+                                            </collision-bottom>
+                                        </if>
+                                    </group>
+                                    <and comment="false" id="0" x="0" y="0">
+                                        <not comment="false" id="0" x="0" y="0">
+                                            <key-value comment="false" id="0" x="0" y="0">
+                                                <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="float"/>
+                                            </key-value>
+                                        </not>
+                                        <not comment="false" id="1" x="0" y="0">
+                                            <key-value comment="false" id="0" x="0" y="0">
+                                                <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="fly"/>
+                                            </key-value>
+                                        </not>
+                                    </and>
+                                </if>
+                            </group>
+                            <key-value comment="false" id="0" x="0" y="0">
+                                <get-val-3-6 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="yesCol"/>
+                            </key-value>
+                        </if>
+                    </group>
+                    <collision-type2 comment="false" id="0" x="0" y="0">
+                        <int id="0" val="1"/>
+                        <int id="1" val="0"/>
+                        <int id="2" val="3"/>
+                    </collision-type2>
+                </if>
+            </group>
+        </collide>
+    </group>
+    <group eventID="21" id="-1"/>
+    <group eventID="23" id="0">
+        <receiver-11-17 comment="false" x="17" y="5">
+            <group eventID="23" id="-1">
+                <if comment="false" x="28" y="35">
+                    <group eventID="23" id="-1">
+                        <if comment="false" x="39" y="70">
+                            <group eventID="23" id="-1">
+                                <if comment="false" x="50" y="100">
+                                    <group eventID="23" id="-1">
+                                        <set-map comment="false" x="61" y="130">
+                                            <get-val-3-6 comment="false" id="0" x="0" y="0"/>
+                                            <int id="1" val="angle"/>
+                                            <to-degreesradians comment="false" id="2" x="0" y="0">
+                                                <int id="0" val="0"/>
+                                                <atan2 comment="false" id="1" x="0" y="0">
+                                                    <minus comment="false" id="0" x="0" y="0">
+                                                        <get-byobval-3-17-2 comment="false" id="0" x="0" y="0"/>
+                                                        <get-xy comment="false" id="1" x="0" y="0">
+                                                            <get-byobval-3-17-0 comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="3"/>
+                                                        </get-xy>
+                                                    </minus>
+                                                    <minus comment="false" id="1" x="0" y="0">
+                                                        <get-byobval-3-17-1 comment="false" id="0" x="0" y="0"/>
+                                                        <get-xy comment="false" id="1" x="0" y="0">
+                                                            <get-byobval-3-17-0 comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="2"/>
+                                                        </get-xy>
+                                                    </minus>
+                                                </atan2>
+                                            </to-degreesradians>
+                                        </set-map>
+                                        <if comment="false" x="61" y="191">
+                                            <group eventID="23" id="-1">
+                                                <setvel comment="false" x="72" y="221">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <key-value comment="false" id="1" x="0" y="0">
+                                                        <get-val-3-6 comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="angle"/>
+                                                    </key-value>
+                                                    <times comment="false" id="2" x="0" y="0">
+                                                        <key-value comment="false" id="0" x="0" y="0">
+                                                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="moveSpeed"/>
+                                                        </key-value>
+                                                        <int id="1" val="10"/>
+                                                    </times>
+                                                </setvel>
+                                                <set-val-3-2 comment="false" x="72" y="263">
+                                                    <int id="0" val="fly"/>
+                                                </set-val-3-2>
+                                            </group>
+                                            <key-exists-map comment="false" id="0" x="0" y="0">
+                                                <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="missle"/>
+                                            </key-exists-map>
+                                        </if>
+                                        <else-if comment="false" x="61" y="295">
+                                            <group eventID="23" id="-1">
+                                                <setvel comment="false" x="72" y="325">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <key-value comment="false" id="1" x="0" y="0">
+                                                        <get-val-3-6 comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="angle"/>
+                                                    </key-value>
+                                                    <times comment="false" id="2" x="0" y="0">
+                                                        <key-value comment="false" id="0" x="0" y="0">
+                                                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="moveSpeed"/>
+                                                        </key-value>
+                                                        <int id="1" val="0.25"/>
+                                                    </times>
+                                                </setvel>
+                                                <set-val-3-2 comment="false" x="72" y="367">
+                                                    <int id="0" val="hover"/>
+                                                </set-val-3-2>
+                                            </group>
+                                            <key-exists-map comment="false" id="0" x="0" y="0">
+                                                <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="gravity"/>
+                                            </key-exists-map>
+                                        </else-if>
+                                        <else-if comment="false" x="61" y="399">
+                                            <group eventID="23" id="-1">
+                                                <setvel comment="false" x="72" y="429">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <key-value comment="false" id="1" x="0" y="0">
+                                                        <get-val-3-6 comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="angle"/>
+                                                    </key-value>
+                                                    <times comment="false" id="2" x="0" y="0">
+                                                        <key-value comment="false" id="0" x="0" y="0">
+                                                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="moveSpeed"/>
+                                                        </key-value>
+                                                        <int id="1" val="2"/>
+                                                    </times>
+                                                </setvel>
+                                                <set-val-3-2 comment="false" x="72" y="471">
+                                                    <int id="0" val="fly"/>
+                                                </set-val-3-2>
+                                            </group>
+                                            <key-exists-map comment="false" id="0" x="0" y="0">
+                                                <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="hasted"/>
+                                            </key-exists-map>
+                                        </else-if>
+                                        <else-if comment="false" x="61" y="503">
+                                            <group eventID="23" id="-1">
+                                                <setvel comment="false" x="72" y="533">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <key-value comment="false" id="1" x="0" y="0">
+                                                        <get-val-3-6 comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="angle"/>
+                                                    </key-value>
+                                                    <times comment="false" id="2" x="0" y="0">
+                                                        <key-value comment="false" id="0" x="0" y="0">
+                                                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="moveSpeed"/>
+                                                        </key-value>
+                                                        <int id="1" val="0.1"/>
+                                                    </times>
+                                                </setvel>
+                                                <set-val-3-2 comment="false" x="72" y="575">
+                                                    <int id="0" val="hover"/>
+                                                </set-val-3-2>
+                                            </group>
+                                            <key-exists-map comment="false" id="0" x="0" y="0">
+                                                <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="paralyzed"/>
+                                            </key-exists-map>
+                                        </else-if>
+                                        <else-if comment="false" x="61" y="607">
+                                            <group eventID="23" id="-1">
+                                                <setvel comment="false" x="72" y="637">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <key-value comment="false" id="1" x="0" y="0">
+                                                        <get-val-3-6 comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="angle"/>
+                                                    </key-value>
+                                                    <times comment="false" id="2" x="0" y="0">
+                                                        <key-value comment="false" id="0" x="0" y="0">
+                                                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="moveSpeed"/>
+                                                        </key-value>
+                                                        <int id="1" val="0.35"/>
+                                                    </times>
+                                                </setvel>
+                                                <set-val-3-2 comment="false" x="72" y="679">
+                                                    <int id="0" val="hover"/>
+                                                </set-val-3-2>
+                                            </group>
+                                            <key-exists-map comment="false" id="0" x="0" y="0">
+                                                <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="slowed"/>
+                                            </key-exists-map>
+                                        </else-if>
+                                        <else comment="false" x="61" y="711">
+                                            <group eventID="23" id="-1">
+                                                <setvel comment="false" x="72" y="731">
+                                                    <ACTOR eid="this" id="0"/>
+                                                    <key-value comment="false" id="1" x="0" y="0">
+                                                        <get-val-3-6 comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="angle"/>
+                                                    </key-value>
+                                                    <times comment="false" id="2" x="0" y="0">
+                                                        <key-value comment="false" id="0" x="0" y="0">
+                                                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="moveSpeed"/>
+                                                        </key-value>
+                                                        <int id="1" val="1"/>
+                                                    </times>
+                                                </setvel>
+                                                <set-val-3-2 comment="false" x="72" y="773">
+                                                    <int id="0" val="hover"/>
+                                                </set-val-3-2>
+                                            </group>
+                                        </else>
+                                        <if comment="false" x="61" y="805">
+                                            <group eventID="23" id="-1">
+                                                <if comment="false" x="72" y="840">
+                                                    <group eventID="23" id="-1">
+                                                        <scaleTo comment="false" x="83" y="870">
+                                                            <get-byobval-3-17-0 comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="100"/>
+                                                            <int id="2" val="100"/>
+                                                            <int id="3" val="0"/>
+                                                            <int id="4" val="0"/>
+                                                        </scaleTo>
+                                                        <setangle comment="false" x="83" y="902">
+                                                            <get-byobval-3-17-0 comment="false" id="0" x="0" y="0"/>
+                                                            <key-value comment="false" id="1" x="0" y="0">
+                                                                <get-val-3-6 comment="false" id="0" x="0" y="0"/>
+                                                                <int id="1" val="angle"/>
+                                                            </key-value>
+                                                        </setangle>
+                                                    </group>
+                                                    <eq comment="false" id="0" x="0" y="0">
+                                                        <get-val-3-2 comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="fly"/>
+                                                    </eq>
+                                                </if>
+                                                <else comment="false" x="72" y="951">
+                                                    <group eventID="23" id="-1">
+                                                        <if comment="false" x="83" y="971">
+                                                            <group eventID="23" id="-1">
+                                                                <scaleTo comment="false" x="94" y="1014">
+                                                                    <get-byobval-3-17-0 comment="false" id="0" x="0" y="0"/>
+                                                                    <int id="1" val="100"/>
+                                                                    <int id="2" val="100"/>
+                                                                    <int id="3" val="0"/>
+                                                                    <int id="4" val="0"/>
+                                                                </scaleTo>
+                                                            </group>
+                                                            <more comment="false" id="0" x="0" y="0">
+                                                                <get-byobval-3-17-1 comment="false" id="0" x="0" y="0"/>
+                                                                <get-xy comment="false" id="1" x="0" y="0">
+                                                                    <get-byobval-3-17-0 comment="false" id="0" x="0" y="0"/>
+                                                                    <int id="1" val="2"/>
+                                                                </get-xy>
+                                                            </more>
+                                                        </if>
+                                                        <else-if comment="false" x="83" y="1058">
+                                                            <group eventID="23" id="-1">
+                                                                <scaleTo comment="false" x="94" y="1101">
+                                                                    <get-byobval-3-17-0 comment="false" id="0" x="0" y="0"/>
+                                                                    <int id="1" val="-100"/>
+                                                                    <int id="2" val="100"/>
+                                                                    <int id="3" val="0"/>
+                                                                    <int id="4" val="0"/>
+                                                                </scaleTo>
+                                                            </group>
+                                                            <less comment="false" id="0" x="0" y="0">
+                                                                <get-byobval-3-17-1 comment="false" id="0" x="0" y="0"/>
+                                                                <get-xy comment="false" id="1" x="0" y="0">
+                                                                    <get-byobval-3-17-0 comment="false" id="0" x="0" y="0"/>
+                                                                    <int id="1" val="2"/>
+                                                                </get-xy>
+                                                            </less>
+                                                        </else-if>
+                                                    </group>
+                                                </else>
+                                            </group>
+                                            <not comment="false" id="0" x="0" y="0">
+                                                <key-exists-map comment="false" id="0" x="0" y="0">
+                                                    <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="rotating"/>
+                                                </key-exists-map>
+                                            </not>
+                                        </if>
+                                        <shout comment="false" x="61" y="1169">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="ANIMATE"/>
+                                        </shout>
+                                    </group>
+                                    <key-exists-map comment="false" id="0" x="0" y="0">
+                                        <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="fly"/>
+                                    </key-exists-map>
+                                </if>
+                            </group>
+                            <noteq comment="false" id="0" x="0" y="0">
+                                <get-val-3-2 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="rally"/>
+                            </noteq>
+                        </if>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <key-exists-map comment="false" id="0" x="0" y="0">
+                            <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="frozen"/>
+                        </key-exists-map>
+                    </not>
+                </if>
+            </group>
+            <get-byobval-3-17-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-3-17-1 comment="false" id="1" x="0" y="0"/>
+            <get-byobval-3-17-2 comment="false" id="2" x="0" y="0"/>
+        </receiver-11-17>
+    </group>
+    <group eventID="23" id="-1"/>
+    <group eventID="22" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="22" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="22" id="-1">
+                        <set-map comment="false" x="37" y="80">
+                            <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="onGround"/>
+                            <key-value comment="false" id="2" x="0" y="0">
+                                <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="hitGround"/>
+                            </key-value>
+                        </set-map>
+                        <set-map comment="false" x="37" y="110">
+                            <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="hitGround"/>
+                            <false comment="false" id="2" x="0" y="0"/>
+                        </set-map>
+                        <if comment="false" x="37" y="135">
+                            <group eventID="22" id="-1">
+                                <set-map comment="false" x="48" y="165">
+                                    <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="onWall"/>
+                                    <false comment="false" id="2" x="0" y="0"/>
+                                </set-map>
+                            </group>
+                            <key-value comment="false" id="0" x="0" y="0">
+                                <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="onGround"/>
+                            </key-value>
+                        </if>
+                        <else comment="false" x="37" y="202">
+                            <group eventID="22" id="-1">
+                                <set-map comment="false" x="48" y="222">
+                                    <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                                    <int id="1" val="onWall"/>
+                                    <key-value comment="false" id="2" x="0" y="0">
+                                        <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="hitWall"/>
+                                    </key-value>
+                                </set-map>
+                            </group>
+                        </else>
+                        <set-map comment="false" x="37" y="264">
+                            <get-val-3-3 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="hitWall"/>
+                            <false comment="false" id="2" x="0" y="0"/>
+                        </set-map>
+                    </group>
+                    <and comment="false" id="0" x="0" y="0">
+                        <not comment="false" id="0" x="0" y="0">
+                            <key-value comment="false" id="0" x="0" y="0">
+                                <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="float"/>
+                            </key-value>
+                        </not>
+                        <not comment="false" id="1" x="0" y="0">
+                            <key-value comment="false" id="0" x="0" y="0">
+                                <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="fly"/>
+                            </key-value>
+                        </not>
+                    </and>
+                </if>
+            </group>
+        </step>
+    </group>
+    <group eventID="22" id="-1"/>
+    <group eventID="25" id="0">
+        <step comment="false" x="15" y="15">
+            <group eventID="25" id="-1">
+                <if comment="false" x="26" y="40">
+                    <group eventID="25" id="-1">
+                        <if comment="false" x="37" y="75">
+                            <group eventID="25" id="-1">
+                                <if comment="false" x="48" y="108">
+                                    <group eventID="25" id="-1">
+                                        <fadeTo comment="false" x="59" y="138">
+                                            <ACTOR eid="this" id="0"/>
+                                            <randint comment="false" id="1" x="0" y="0">
+                                                <int id="0" val="30"/>
+                                                <int id="1" val="60"/>
+                                            </randint>
+                                            <int id="2" val="0"/>
+                                            <int id="3" val="0"/>
+                                        </fadeTo>
+                                    </group>
+                                    <key-exists-map comment="false" id="0" x="0" y="0">
+                                        <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="gravity"/>
+                                    </key-exists-map>
+                                </if>
+                                <else comment="false" x="48" y="182">
+                                    <group eventID="25" id="-1">
+                                        <fadeTo comment="false" x="59" y="202">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="100"/>
+                                            <int id="2" val="0"/>
+                                            <int id="3" val="0"/>
+                                        </fadeTo>
+                                    </group>
+                                </else>
+                            </group>
+                            <has-snippet comment="false" id="0" x="0" y="0">
+                                <ACTOR eid="this" id="0"/>
+                                <int id="1" val="triggers_hero"/>
+                            </has-snippet>
+                        </if>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <key-exists-map comment="false" id="0" x="0" y="0">
+                            <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="frozen"/>
+                        </key-exists-map>
+                    </not>
+                </if>
+                <else comment="false" x="26" y="265">
+                    <group eventID="25" id="-1">
+                        <fadeTo comment="false" x="37" y="285">
+                            <ACTOR eid="this" id="0"/>
+                            <randint comment="false" id="1" x="0" y="0">
+                                <int id="0" val="30"/>
+                                <int id="1" val="60"/>
+                            </randint>
+                            <int id="2" val="0"/>
+                            <int id="3" val="0"/>
+                        </fadeTo>
+                        <setanim comment="false" x="37" y="317">
+                            <ACTOR eid="this" id="0"/>
+                            <string-to-anim comment="false" id="1" x="0" y="0">
+                                <int id="0" val="frozen"/>
+                            </string-to-anim>
+                        </setanim>
+                    </group>
+                </else>
+            </group>
+        </step>
+    </group>
+    <group eventID="25" id="-1"/>
+    <group eventID="24" id="0">
+        <receiver-12-18 comment="false" x="15" y="15">
+            <group eventID="24" id="-1">
+                <remove-map comment="false" x="26" y="45">
+                    <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                    <get-byobval-3-18-1 comment="false" id="1" x="0" y="0"/>
+                </remove-map>
+            </group>
+            <get-byobval-3-18-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-3-18-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-12-18>
+    </group>
+    <group eventID="24" id="-1"/>
+    <group eventID="26" id="0">
+        <receiver-13-54 comment="false" x="0" y="5">
+            <group eventID="26" id="-1">
+                <if comment="false" x="11" y="35">
+                    <group eventID="26" id="-1">
+                        <if comment="false" x="22" y="70">
+                            <group eventID="26" id="-1">
+                                <if comment="false" x="33" y="100">
+                                    <group eventID="26" id="-1">
+                                        <if comment="false" x="44" y="130">
+                                            <group eventID="26" id="-1">
+                                                <setvel comment="false" x="55" y="160">
+                                                    <get-byobval-3-54-0 comment="false" id="0" x="0" y="0"/>
+                                                    <get-byobval-3-54-1 comment="false" id="1" x="0" y="0"/>
+                                                    <times comment="false" id="2" x="0" y="0">
+                                                        <key-value comment="false" id="0" x="0" y="0">
+                                                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="moveSpeed"/>
+                                                        </key-value>
+                                                        <int id="1" val="10"/>
+                                                    </times>
+                                                </setvel>
+                                                <set-val-3-2 comment="false" x="55" y="202">
+                                                    <int id="0" val="fly"/>
+                                                </set-val-3-2>
+                                            </group>
+                                            <key-exists-map comment="false" id="0" x="0" y="0">
+                                                <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="missle"/>
+                                            </key-exists-map>
+                                        </if>
+                                        <else-if comment="false" x="44" y="234">
+                                            <group eventID="26" id="-1">
+                                                <setvel comment="false" x="55" y="264">
+                                                    <get-byobval-3-54-0 comment="false" id="0" x="0" y="0"/>
+                                                    <get-byobval-3-54-1 comment="false" id="1" x="0" y="0"/>
+                                                    <times comment="false" id="2" x="0" y="0">
+                                                        <key-value comment="false" id="0" x="0" y="0">
+                                                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="moveSpeed"/>
+                                                        </key-value>
+                                                        <int id="1" val="0.25"/>
+                                                    </times>
+                                                </setvel>
+                                                <set-val-3-2 comment="false" x="55" y="306">
+                                                    <int id="0" val="hover"/>
+                                                </set-val-3-2>
+                                            </group>
+                                            <key-exists-map comment="false" id="0" x="0" y="0">
+                                                <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="gravity"/>
+                                            </key-exists-map>
+                                        </else-if>
+                                        <else-if comment="false" x="44" y="338">
+                                            <group eventID="26" id="-1">
+                                                <setvel comment="false" x="55" y="368">
+                                                    <get-byobval-3-54-0 comment="false" id="0" x="0" y="0"/>
+                                                    <get-byobval-3-54-1 comment="false" id="1" x="0" y="0"/>
+                                                    <times comment="false" id="2" x="0" y="0">
+                                                        <key-value comment="false" id="0" x="0" y="0">
+                                                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="moveSpeed"/>
+                                                        </key-value>
+                                                        <int id="1" val="2"/>
+                                                    </times>
+                                                </setvel>
+                                                <set-val-3-2 comment="false" x="55" y="410">
+                                                    <int id="0" val="fly"/>
+                                                </set-val-3-2>
+                                            </group>
+                                            <key-exists-map comment="false" id="0" x="0" y="0">
+                                                <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="hasted"/>
+                                            </key-exists-map>
+                                        </else-if>
+                                        <else-if comment="false" x="44" y="442">
+                                            <group eventID="26" id="-1">
+                                                <setvel comment="false" x="55" y="472">
+                                                    <get-byobval-3-54-0 comment="false" id="0" x="0" y="0"/>
+                                                    <get-byobval-3-54-1 comment="false" id="1" x="0" y="0"/>
+                                                    <times comment="false" id="2" x="0" y="0">
+                                                        <key-value comment="false" id="0" x="0" y="0">
+                                                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="moveSpeed"/>
+                                                        </key-value>
+                                                        <int id="1" val="0.1"/>
+                                                    </times>
+                                                </setvel>
+                                                <set-val-3-2 comment="false" x="55" y="514">
+                                                    <int id="0" val="hover"/>
+                                                </set-val-3-2>
+                                            </group>
+                                            <key-exists-map comment="false" id="0" x="0" y="0">
+                                                <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="paralyzed"/>
+                                            </key-exists-map>
+                                        </else-if>
+                                        <else-if comment="false" x="44" y="546">
+                                            <group eventID="26" id="-1">
+                                                <setvel comment="false" x="55" y="576">
+                                                    <get-byobval-3-54-0 comment="false" id="0" x="0" y="0"/>
+                                                    <get-byobval-3-54-1 comment="false" id="1" x="0" y="0"/>
+                                                    <times comment="false" id="2" x="0" y="0">
+                                                        <key-value comment="false" id="0" x="0" y="0">
+                                                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="moveSpeed"/>
+                                                        </key-value>
+                                                        <int id="1" val="0.35"/>
+                                                    </times>
+                                                </setvel>
+                                                <set-val-3-2 comment="false" x="55" y="618">
+                                                    <int id="0" val="hover"/>
+                                                </set-val-3-2>
+                                            </group>
+                                            <key-exists-map comment="false" id="0" x="0" y="0">
+                                                <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                <int id="1" val="slowed"/>
+                                            </key-exists-map>
+                                        </else-if>
+                                        <else comment="false" x="44" y="650">
+                                            <group eventID="26" id="-1">
+                                                <setvel comment="false" x="55" y="670">
+                                                    <get-byobval-3-54-0 comment="false" id="0" x="0" y="0"/>
+                                                    <get-byobval-3-54-1 comment="false" id="1" x="0" y="0"/>
+                                                    <times comment="false" id="2" x="0" y="0">
+                                                        <key-value comment="false" id="0" x="0" y="0">
+                                                            <get-val-3-1 comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="moveSpeed"/>
+                                                        </key-value>
+                                                        <int id="1" val="1"/>
+                                                    </times>
+                                                </setvel>
+                                                <set-val-3-2 comment="false" x="55" y="712">
+                                                    <int id="0" val="hover"/>
+                                                </set-val-3-2>
+                                            </group>
+                                        </else>
+                                        <if comment="false" x="44" y="744">
+                                            <group eventID="26" id="-1">
+                                                <if comment="false" x="55" y="779">
+                                                    <group eventID="26" id="-1">
+                                                        <scaleTo comment="false" x="66" y="809">
+                                                            <get-byobval-3-54-0 comment="false" id="0" x="0" y="0"/>
+                                                            <int id="1" val="100"/>
+                                                            <int id="2" val="100"/>
+                                                            <int id="3" val="0"/>
+                                                            <int id="4" val="0"/>
+                                                        </scaleTo>
+                                                        <setangle comment="false" x="66" y="841">
+                                                            <get-byobval-3-54-0 comment="false" id="0" x="0" y="0"/>
+                                                            <get-byobval-3-54-1 comment="false" id="1" x="0" y="0"/>
+                                                        </setangle>
+                                                    </group>
+                                                    <eq comment="false" id="0" x="0" y="0">
+                                                        <get-val-3-2 comment="false" id="0" x="0" y="0"/>
+                                                        <int id="1" val="fly"/>
+                                                    </eq>
+                                                </if>
+                                                <else comment="false" x="55" y="885">
+                                                    <group eventID="26" id="-1">
+                                                        <if comment="false" x="66" y="905">
+                                                            <group eventID="26" id="-1">
+                                                                <set-map comment="false" x="77" y="935">
+                                                                    <get-val-3-6 comment="false" id="0" x="0" y="0"/>
+                                                                    <int id="1" val="angle"/>
+                                                                    <minus comment="false" id="2" x="0" y="0">
+                                                                        <get-byobval-3-54-1 comment="false" id="0" x="0" y="0"/>
+                                                                        <int id="1" val="360"/>
+                                                                    </minus>
+                                                                </set-map>
+                                                            </group>
+                                                            <more comment="false" id="0" x="0" y="0">
+                                                                <get-byobval-3-54-1 comment="false" id="0" x="0" y="0"/>
+                                                                <int id="1" val="360"/>
+                                                            </more>
+                                                        </if>
+                                                        <else-if comment="false" x="66" y="977">
+                                                            <group eventID="26" id="-1">
+                                                                <set-map comment="false" x="77" y="1007">
+                                                                    <get-val-3-6 comment="false" id="0" x="0" y="0"/>
+                                                                    <int id="1" val="angle"/>
+                                                                    <plus comment="false" id="2" x="0" y="0">
+                                                                        <get-byobval-3-54-1 comment="false" id="0" x="0" y="0"/>
+                                                                        <int id="1" val="360"/>
+                                                                    </plus>
+                                                                </set-map>
+                                                            </group>
+                                                            <less comment="false" id="0" x="0" y="0">
+                                                                <get-byobval-3-54-1 comment="false" id="0" x="0" y="0"/>
+                                                                <int id="1" val="0"/>
+                                                            </less>
+                                                        </else-if>
+                                                        <else comment="false" x="66" y="1049">
+                                                            <group eventID="26" id="-1">
+                                                                <set-map comment="false" x="77" y="1069">
+                                                                    <get-val-3-6 comment="false" id="0" x="0" y="0"/>
+                                                                    <int id="1" val="angle"/>
+                                                                    <get-byobval-3-54-1 comment="false" id="2" x="0" y="0"/>
+                                                                </set-map>
+                                                            </group>
+                                                        </else>
+                                                        <if comment="false" x="66" y="1106">
+                                                            <group eventID="26" id="-1">
+                                                                <scaleTo comment="false" x="77" y="1146">
+                                                                    <get-byobval-3-54-0 comment="false" id="0" x="0" y="0"/>
+                                                                    <int id="1" val="-100"/>
+                                                                    <int id="2" val="100"/>
+                                                                    <int id="3" val="0"/>
+                                                                    <int id="4" val="0"/>
+                                                                </scaleTo>
+                                                            </group>
+                                                            <and comment="false" id="0" x="0" y="0">
+                                                                <more comment="false" id="0" x="0" y="0">
+                                                                    <key-value comment="false" id="0" x="0" y="0">
+                                                                        <get-val-3-6 comment="false" id="0" x="0" y="0"/>
+                                                                        <int id="1" val="angle"/>
+                                                                    </key-value>
+                                                                    <int id="1" val="90"/>
+                                                                </more>
+                                                                <less comment="false" id="1" x="0" y="0">
+                                                                    <key-value comment="false" id="0" x="0" y="0">
+                                                                        <get-val-3-6 comment="false" id="0" x="0" y="0"/>
+                                                                        <int id="1" val="angle"/>
+                                                                    </key-value>
+                                                                    <int id="1" val="270"/>
+                                                                </less>
+                                                            </and>
+                                                        </if>
+                                                        <else comment="false" x="66" y="1190">
+                                                            <group eventID="26" id="-1">
+                                                                <scaleTo comment="false" x="77" y="1210">
+                                                                    <get-byobval-3-54-0 comment="false" id="0" x="0" y="0"/>
+                                                                    <int id="1" val="100"/>
+                                                                    <int id="2" val="100"/>
+                                                                    <int id="3" val="0"/>
+                                                                    <int id="4" val="0"/>
+                                                                </scaleTo>
+                                                            </group>
+                                                        </else>
+                                                    </group>
+                                                </else>
+                                            </group>
+                                            <not comment="false" id="0" x="0" y="0">
+                                                <key-exists-map comment="false" id="0" x="0" y="0">
+                                                    <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                                    <int id="1" val="rotating"/>
+                                                </key-exists-map>
+                                            </not>
+                                        </if>
+                                        <shout comment="false" x="44" y="1278">
+                                            <ACTOR eid="this" id="0"/>
+                                            <int id="1" val="ANIMATE"/>
+                                        </shout>
+                                    </group>
+                                    <key-exists-map comment="false" id="0" x="0" y="0">
+                                        <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                                        <int id="1" val="fly"/>
+                                    </key-exists-map>
+                                </if>
+                            </group>
+                            <noteq comment="false" id="0" x="0" y="0">
+                                <get-val-3-2 comment="false" id="0" x="0" y="0"/>
+                                <int id="1" val="rally"/>
+                            </noteq>
+                        </if>
+                    </group>
+                    <not comment="false" id="0" x="0" y="0">
+                        <key-exists-map comment="false" id="0" x="0" y="0">
+                            <get-val-3-5 comment="false" id="0" x="0" y="0"/>
+                            <int id="1" val="frozen"/>
+                        </key-exists-map>
+                    </not>
+                </if>
+            </group>
+            <get-byobval-3-54-0 comment="false" id="0" x="0" y="0"/>
+            <get-byobval-3-54-1 comment="false" id="1" x="0" y="0"/>
+        </receiver-13-54>
+    </group>
+    <group eventID="26" id="-1"/>
+</groups>

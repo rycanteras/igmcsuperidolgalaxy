@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene depth="2" desc="" eventsnippetid="14" extheight="864" extwidth="1344" extx="-32" exty="-32" format="3.4.0" gravx="-0.0" gravy="0.0" height="800" id="1" name="prototype_boss" revision="" savecount="0" tiled="1" tileh="32" tilew="32" type="standard" width="1280">
+    <layers>
+        <color-bg blue="255" green="255" red="255"/>
+        <layer blendMode="normal" color="0,0,255" id="1" locked="false" name="Layer 1" opacity="100" order="1" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+        <layer blendMode="normal" color="100,168,234" id="0" locked="false" name="Layer 0" opacity="100" order="0" scrollFactorX="1.0" scrollFactorY="1.0" visible="true"/>
+    </layers>
+    <joints/>
+    <regions/>
+    <terrainRegions/>
+    <actors>
+        <actor a="0.0" aid="1" c="false" group="3" id="35" name="enemy 1" sx="1.0" sy="1.0" x="1120" y="640" z="0"/>
+        <actor a="0.0" aid="2" c="false" group="3" id="0" name="hero 2" sx="1.0" sy="1.0" x="32" y="640" z="0"/>
+        <actor a="0.0" aid="3" c="false" group="3" id="37" name="stage 3" sx="1.0" sy="1.0" x="608" y="384" z="1"/>
+    </actors>
+    <snippets>
+        <s enabled="true" id="1">
+            <prop id="1" list="0" val=""/>
+            <prop id="2" list="2" val=""/>
+            <prop id="3" list="2" val=""/>
+            <prop id="4" list="1" val=""/>
+        </s>
+        <s enabled="true" id="15">
+            <prop id="1" list="0" val="50"/>
+            <prop id="2" list="0" val=""/>
+            <prop id="3" list="2" val=""/>
+            <prop id="4" list="2" val=""/>
+        </s>
+    </snippets>
+    <terrain>
+        <p pts="4,1216.0,736.0,1216.0,0.0,0.0,0.0,0.0,736.0" x="32.0" y="32.0"/>
+        <p pts="4,1280.0,800.0,0.0,800.0,0.0,0.0,1280.0,0.0" x="0.0" y="0.0"/>
+    </terrain>
+    <atlases members="0,1,2,3," retainAtlases="false"/>
+</scene>
